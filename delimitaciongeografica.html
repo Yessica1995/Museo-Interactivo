@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museo de Croacia - Delimitación Geográfica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Barra de navegación */
+        .navbar {
+           background: linear-gradient(90deg, #1e3c72, #2a5298);
+           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+       }
+
+       .navbar .nav-link {
+           color: white !important;
+           transition: color 0.3s ease;
+       }
+
+       .navbar .nav-link:hover {
+           color: #f4d03f !important;
+       }
+
+       .navbar-brand img {
+           height: 30px;
+           margin-right: 10px;
+       }
+
+       .img-fluid:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-title {
+        font-family: 'Arial', sans-serif; 
+        color: #2a5298; 
+        font-size: 2.5rem; 
+        font-weight: bold; 
+        text-transform: uppercase; 
+        letter-spacing: 2px; 
+        text-align: center; 
+        margin-bottom: 20px; 
+        }
+
+        .section-title::after {
+            content: ""; 
+            display: block; 
+            height: 3px; 
+            background-color: #f4d03f; 
+            margin-top: 10px;
+            width: 80%; 
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Sombra para la imagen */
+        .img-fluid {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .img-fluid:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+
+        /* Footer */
+        .footer {
+                background: #1e3c72;
+                color: #ffffff;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .footer a {
+                color: #ffffff;
+                text-decoration: none;
+                margin: 0 10px;
+                transition: color 0.3s ease;
+            }
+
+            .footer a:hover {
+                color: #f4d03f;
+            }
+
+
+   </style>
+</head>
+
+<body>
+     <!-- Barra de Navegación -->
+     <nav class="navbar navbar-expand-lg" style="background-color: #e0e0e0;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="IMG/Escudo.png" alt="Bandera" style="height: 30px; margin-right: 10px;">
+                Museo de Croacia
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="explorarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Explorar
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="explorarDropdown">
+                            <li><a class="dropdown-item" href="#">Historia</a></li>
+                            <li><a class="dropdown-item" href="#">Economía</a></li>
+                            <li><a class="dropdown-item" href="#">Cultura</a></li>
+                            <li><a class="dropdown-item" href="#">Moneda</a></li>
+                            <li><a class="dropdown-item" href="#"">Gobierno</a></li>
+                            <li><a class="dropdown-item" href="#"">Conflictos Sociales</a></li>
+                            <li><a class="dropdown-item" href="delimitaciongeografica.html">Geografía</a></li>
+                            <li><a class="dropdown-item" href="salario.html">Salario</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="DatosCuriosos.html">Datos Curiosos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="EconomiaCroacia.html">Acerca De</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="container my-5">
+        <h2 class="section-title text-center mb-4">Geografía, idioma y población de Croacia</h2>
+        <img src="IMG/Bandera.jpg" class="img-fluid mx-auto d-block my-4" alt="Mapa de Croacia">
+
+        <!-- Acordeón -->
+
+        <!-- Accordion para separar las secciones -->
+        <div class="accordion" id="accordionExample">
+            <!-- Sección 1: Delimitación Geográfica -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Delimitación Geográfica
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Croacia está ubicada entre Europa Central y Europa meridional, y colinda al noreste con Hungría, al este con Serbia, al sureste con Bosnia-Herzegovina y Montenegro, al suroeste con el mar Adriático y al noroeste con Eslovenia. Gran parte del país se ubica entre las latitudes 42° y 47° N y las longitudes 13° y 20° E. Parte de su territorio en el extremo sur que rodea a Dubrovnik es prácticamente un exclave conectado al resto del país solo por sus aguas territoriales, pero separado del continente por una pequeña franja de litoral que le pertenece a Neum, Bosnia-Herzegovina.142</p>
+                               <p>Su superficie es de 56 594 km²,1 55 974 km² de tierra y 620 km² de agua,1 esto lo hace el 127.º país más grande del mundo.102 La principal característica del relieve son las montañas de los Alpes Dináricos, cuyo punto más alto es el Dinara, con 1831 m s. n. m., ubicado al sur cerca de la frontera con Bosnia-Herzegovina.102 La costa del mar Adriático conforma el límite sureste del país, y delante de ella existen más de mil islas e islotes de tamaños diversos, 48 están permanentemente habitados. Las islas más grandes son Cres y Krk, cada una con un área de alrededor de 405 km².102</p>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="IMG/mapa.jpg" class="img-fluid rounded shadow-sm" alt="Mapa de Croacia">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+               <!-- Sección 2: Continente -->
+         <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Continente
+        </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Croacia/ Europa Continente</p>
+                    <p>Croacia (nombre local, Republika Hrvatska) es un estado de la Europa suroriental, en los Balcanes occidentales, a orillas del mar Adriático, entre Bosnia-Herzegovina y Eslovenia.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="IMG/continente.jpg" class="img-fluid rounded shadow-sm" alt="Europa con Croacia resaltada" style="max-width: 50%;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- Sección 3: Idioma -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Idioma
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>El croata es el idioma oficial de Croacia y uno de los 24 idiomas oficiales de la Unión Europea. Aunque el 95.6% de la población habla croata como lengua materna, existen otros idiomas minoritarios como el serbio, italiano, húngaro, y checo, que tienen estatus oficial en ciertas regiones, siempre que sean hablados por más de un tercio de la población local. El croata pertenece a la familia eslava y se escribe con el alfabeto latino. Se hablan tres dialectos principales: estocavo, chakaviano y kaikaviano, siendo el estocavo el estándar oficial.</p>
+                                <p>Durante el periodo de 1961 a 1991, el serbocroata fue el idioma oficial, y aunque las variantes serbias y croatas no se reconocían como diferentes, se usaban dos alfabetos: latino y cirílico. Desde la independencia de Croacia, el idioma croata ha sido promovido de manera proteccionista, adaptando muchas palabras extranjeras para darles un «sonido eslavo» y resistiendo esfuerzos para fusionarlo con el serbocroata o el eslavo meridional.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="IMG/idioma.jpg" class="img-fluid rounded shadow-sm" alt="Bandera de Croacia">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección 4: Población -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Población
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>La población actual de Croacia es de 3.864.645 habitantes en 2024, según la elaboración de Worldometer de los últimos datos de las Naciones Unidas.
+                                    Se estima que la población de Croacia en 2024 será de 3.875.325 personas a mediados de año.
+                                    La población de Croacia equivale al 0,05% de la población mundial total.
+                                    Croacia ocupa el puesto número 130 en la lista de países (y dependencias) por población.
+                                    La densidad de población en Croacia es de 69 por Km2 (179 personas por mi2 ) .
+                                    La superficie total del territorio es de 55.960 km2 (21.606 millas cuadradas).
+                                    El 61,2% de la población es urbana (2.372.446 personas en 2024).
+                                    La edad media en Croacia es de 45,0 años.
+                                    (worldometer, 2024)</p>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="IMG/poblacion.jpg" class="img-fluid rounded shadow-sm" alt="Vista de Zagreb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+
+ <!-- Pie de página -->
+ <footer class="footer">
+    <p>Síguenos en nuestras redes sociales</p>
+    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+    <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube fa-lg"></i></a>
+    <p>Derechos Reservados &copy; 2024 Museo de Croacia</p>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+

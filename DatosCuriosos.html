@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museo de Croacia - Datos Curiosos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+         /* Barra de navegación */
+         .navbar {
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .nav-link:hover {
+            color: #f4d03f !important;
+        }
+
+        .navbar-brand img {
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        /* Footer */
+       .footer {
+            background: #1e3c72;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #f4d03f;
+        }
+
+
+    </style>
+</head>
+
+<body>
+     <!-- Barra de Navegación -->
+     <nav class="navbar navbar-expand-lg" style="background-color: #e0e0e0;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="IMG/Escudo.png" alt="Bandera" style="height: 30px; margin-right: 10px;">
+                Museo de Croacia
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="explorarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Explorar
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="explorarDropdown">
+                            <li><a class="dropdown-item" href="#">Historia</a></li>
+                            <li><a class="dropdown-item" href="#">Economía</a></li>
+                            <li><a class="dropdown-item" href="#">Cultura</a></li>
+                            <li><a class="dropdown-item" href="#">Moneda</a></li>
+                            <li><a class="dropdown-item" href="#"">Gobierno</a></li>
+                            <li><a class="dropdown-item" href="#"">Conflictos Sociales</a></li>
+                            <li><a class="dropdown-item" href="delimitaciongeografica.html">Geografía</a></li>
+                            <li><a class="dropdown-item" href="salario.html">Salario</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="DatosCuriosos.html">Datos Curiosos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="EconomiaCroacia.html">Acerca De</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+ 
+<link rel="stylesheet" href="styles.css">
+<style>
+    .servicios-container {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .servicios-container h2 {
+        font-size: 32px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .servicios-container .highlight {
+        color: #00bfae;
+    }
+
+    .servicios-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .servicio-item {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        width: 250px;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+
+    .servicio-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .servicio-item img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+        border-radius: 8px;
+    }
+
+    .servicio-item h5 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .servicio-item p {
+        font-size: 14px;
+        color: #777;
+    }
+
+    .btn-primary {
+        background-color: #00bfae;
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 15px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #028d6f;
+    }
+</style>
+
+<div class="servicios-container">
+    <h2>Datos <span class="highlight">Curiosos</span></h2>
+
+    <div class="servicios-grid">
+        <div class="servicio-item">
+            <img src="IMG/Dato1.jpg" alt="..." />
+            <h5 class="card-title">Croacia es famosa por sus playas de aguas cristalinas</h5>
+            <p class="card-text">Croacia cuenta con una costa impresionante, que se extiende a lo largo del Mar Adriático, con algunas de las aguas más claras y hermosas de Europa.</p>
+        </div>
+
+        <div class="servicio-item">
+            <img src="IMG/Dato2.jpg" alt="..." />
+            <h5 class="card-title">El Parque Nacional de los Lagos de Plitvice es Patrimonio de la Humanidad</h5>
+            <p class="card-text">Este parque es conocido por sus hermosos lagos y cascadas. Es el parque nacional más antiguo de Croacia y fue incluido en la lista de Patrimonios de la Humanidad de la UNESCO en 1979.</p>
+        </div>
+
+        <div class="servicio-item">
+            <img src="IMG/Dato3.jpg" alt="..." />
+            <h5 class="card-title">Croacia tiene una de las ciudades amuralladas más antiguas del mundo</h5>
+            <p class="card-text">La ciudad de Dubrovnik es conocida por sus impresionantes murallas medievales y ha sido un importante destino turístico. Fue fundada en el siglo VII y su casco antiguo es Patrimonio de la Humanidad.</p>
+        </div>
+
+        <div class="servicio-item">
+            <img src="IMG/Dato4.jpg" alt="..." />
+            <h5 class="card-title">El ajedrez moderno se originó en Croacia</h5>
+            <p class="card-text">El ajedrez moderno, tal como lo conocemos hoy, fue desarrollado en Croacia en el siglo XV, especialmente en la región de Zadar.</p>
+        </div>
+
+        <div class="servicio-item">
+            <img src="IMG/Dato5.jpg" alt="..." />
+            <h5 class="card-title">Croacia es conocida por su producción de vino</h5>
+            <p class="card-text">La tradición vinícola de Croacia se remonta a miles de años y el país produce una gran variedad de vinos, especialmente en las regiones de Istria y Dalmacia.</p>
+        </div>
+
+        <div class="servicio-item">
+            <img src="IMG/Dato6.jpg" alt="..." />
+            <h5 class="card-title">La isla de Hvar es un destino turístico popular</h5>
+            <p class="card-text">La isla de Hvar es famosa por su clima soleado, hermosos paisajes y vibrante vida nocturna, siendo uno de los destinos más conocidos del Mar Adriático.</p>
+        </div>
+
+        <div class="servicio-item">
+            <img src="IMG/Dato7.jpg" alt="..." />
+            <h5 class="card-title">Croacia es el hogar del mar de sal de la región de Pannonian</h5>
+            <p class="card-text">El Mar de Sal (Mare Salis) es una característica geográfica de Croacia, y el país es conocido por la producción de sal marina, especialmente en la región de Pannonian.</p>
+        </div>
+    </div>
+</div>
+
+
+     <!-- Pie de página -->
+     <footer class="footer">
+        <p>Síguenos en nuestras redes sociales</p>
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube fa-lg"></i></a>
+        <p>Derechos Reservados &copy; 2024 Museo de Croacia</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
