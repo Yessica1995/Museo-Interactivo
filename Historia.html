@@ -3,55 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HISTORIA</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Historia de Croacia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('IMG/croacia-bg.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        /* Sección de tarjetas */
+        .card {
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .timeline {
+            display: flex;
+            overflow-x: scroll;
+            padding: 20px 0;
+            gap: 15px;
+        }
+
+        .timeline-item {
+            min-width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background: white;
+            text-align: center;
+        }
+
+        .timeline-item img {
+            width: 100%;
+            border-bottom: 3px solid #0056b3;
+        }
+
+        .timeline-item h5 {
+            padding: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <section id="prehistoria">
-            <h2>HISTORIA DE CROACIA</h2>
-            <p>
-                La historia de Croacia abarca más de dos mil años, marcada por períodos de grandeza y de lucha constante por la soberanía, enfrentándose a imperios poderosos, invasiones extranjeras, y disputas internas. Si bien hoy en día es un país joven y próspero, independizado en 1991, sus raíces históricas son profundas, reflejando la resiliencia de su pueblo a lo largo de los siglos. Esta nación, formada por una población de origen eslavo, ha sido escenario de una mezcla única de influencias romanas, bizantinas, venecianas, otomanas, y austrohúngaras, así como de conflictos nacionales y regionales que marcaron su camino hacia la independencia y la integración en las estructuras europeas.
-            </p>
-        </section>
-        <!-- Tarjeta 1 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/300x200" alt="Constitución">
-            <div class="card-content">
-                <h3>Prehistoria y Antigüedad</h3>
-                <p>Los primeros indicios de asentamientos humanos en lo que hoy es Croacia se remontan al período Paleolítico, con restos de neandertales descubiertos en Krapina, uno de los yacimientos más importantes de Europa. En el Neolítico, las culturas de Starčevo y Vučedol dejaron un legado significativo, destacándose por sus avanzadas habilidades en alfarería y su organización social. Durante la Edad del Hierro, los ilirios, una cultura indoeuropea, dominaron gran parte del territorio, coexistiendo con los celtas que se asentaron en el norte en el siglo IV a.C.
-                   Hacia el siglo II a.C., el Imperio romano conquistó la región, integrándola en las provincias de Panonia y Dalmacia. Bajo el dominio romano, Croacia experimentó un desarrollo considerable. Se fundaron ciudades como Zadar, Pula, Poreč y Split, que se convirtieron en importantes centros administrativos, culturales y comerciales. Split, en particular, destaca por albergar el palacio del emperador Diocleciano, una de las construcciones romanas mejor conservadas hasta la fecha. Con la caída del Imperio romano en el siglo V, la región quedó bajo el control de los ostrogodos, bizantinos y, temporalmente, los lombardos.</p>
-            </div>
-        </div>
 
-        <!-- Tarjeta 2 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/300x200" alt="Sistema electoral">
-            <div class="card-content">
-                <h3>El origen de los croatas</h3>
-                <p>El establecimiento del pueblo croata comenzó en los siglos VI y VII, cuando tribus eslavas, incluyendo los croatas, migraron hacia el sur desde las regiones de Europa oriental. Los croatas, posiblemente originarios de la región de Galicia (en la actual Ucrania y Polonia), fueron invitados por el Imperio bizantino a asentarse en Dalmacia para defender la región de los ávaros, un pueblo nómada de Asia central que amenazaba la estabilidad del imperio. Estas tribus adoptaron el cristianismo poco después de su llegada, influenciados por misioneros romanos y bizantinos.
-                   Los croatas comenzaron a organizarse políticamente bajo líderes tribales. Para el siglo VII, ya existían dos ducados principales: uno en Panonia y otro en Dalmacia. En el siglo IX, figuras destacadas como el duque Trpimir consolidaron el poder croata, estableciendo la dinastía Trpimirović, que gobernaría durante varias generaciones. El cristianismo se convirtió en un pilar de la identidad croata, en parte gracias a la labor evangelizadora de los santos Cirilo y Metodio, quienes llevaron la fe cristiana y el alfabeto glagolítico, un sistema de escritura adaptado para los eslavos.</p>
-            </div>
-        </div>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Historia de Croacia: Un Viaje en el Tiempo</h1>
+        <p>Explora los eventos más importantes que han dado forma a este fascinante país.</p>
+    </div>
 
-        <!-- Tarjeta 3 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/300x200" alt="Poder legislativo">
-            <div class="card-content">
-                <h3>Poder legislativo</h3>
-                <p>De acuerdo a la tradición legal, el Parlamento Croata lleva el nombre de Sabor...</p>
+    <!-- Sección de Tarjetas -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Eventos Históricos Destacados</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="IMG/prehistoria.jpg" alt="Prehistoria">
+                    <div class="card-body">
+                        <h5 class="card-title">Prehistoria y Antigüedad</h5>
+                        <p class="card-text">Desde restos neandertales hasta el legado de los romanos, Croacia tiene una historia profunda.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <!-- Tarjeta 4 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/300x200" alt="Poder ejecutivo">
-            <div class="card-content">
-                <h3>Poder ejecutivo</h3>
-                <p>El Presidente de la República representa y actúa en nombre de la República de Croacia...</p>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="IMG/reino.jpg" alt="Reino de Croacia">
+                    <div class="card-body">
+                        <h5 class="card-title">El Reino de Croacia</h5>
+                        <p class="card-text">El duque Tomislav unificó a los croatas y fue coronado como el primer rey en el año 925.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="IMG/independencia.jpg" alt="Independencia Moderna">
+                    <div class="card-body">
+                        <h5 class="card-title">Independencia Moderna</h5>
+                        <p class="card-text">En 1991, Croacia declaró su independencia, marcando una nueva era.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- Línea de Tiempo -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Línea de Tiempo</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <img src="IMG/paleolitico.jpg" alt="Paleolítico">
+                <h5>Período Paleolítico</h5>
+                <p>Primeros asentamientos humanos.</p>
+            </div>
+            <div class="timeline-item">
+                <img src="IMG/edad-hierro.jpg" alt="Edad del Hierro">
+                <h5>Edad del Hierro</h5>
+                <p>Dominio de los ilirios y celtas.</p>
+            </div>
+            <div class="timeline-item">
+                <img src="IMG/imperio-romano.jpg" alt="Imperio Romano">
+                <h5>Dominio Romano</h5>
+                <p>Integración en las provincias de Panonia y Dalmacia.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Historia de Croacia. Todos los derechos reservados.
+    </footer>
+
 </body>
 </html>
 
