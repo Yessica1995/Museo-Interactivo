@@ -46,75 +46,70 @@
             box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
         }
 
-        /* Línea de Tiempo */
-        .timeline-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 40px 20px;
-            position: relative;
-        }
+/* Contenedor principal */
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+    max-width: 800px; /* Limitar el ancho */
+    margin: auto; /* Centrar el contenedor */
+}
 
-        .timeline-line {
-            position: absolute;
-            width: 4px;
-            background: #0056b3;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+/* Línea central */
+.timeline-line {
+    position: absolute;
+    width: 4px;
+    background: #0056b3;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
 
-        .timeline-event {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            margin: 20px 0;
-            width: 100%;
-        }
+/* Evento individual */
+.timeline-event {
+    display: flex;
+    justify-content: space-between; /* Asegurar separación simétrica */
+    align-items: center;
+    margin: 40px 0; /* Espaciado uniforme */
+    width: 100%; /* Usar todo el ancho del contenedor */
+}
 
-        .timeline-event:nth-child(even) {
-            justify-content: flex-start;
-        }
+/* Alternar posición */
+.timeline-event:nth-child(even) {
+    flex-direction: row-reverse; /* Cambiar alineación */
+}
 
-        .timeline-content {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            text-align: center;
-            position: relative;
-        }
+/* Contenido del evento */
+.timeline-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    position: relative;
+    z-index: 2; /* Sobre la línea */
+}
 
-        .timeline-content h5 {
-            color: #0056b3;
-            margin: 0;
-        }
+/* Íconos de los eventos */
+.timeline-icon {
+    width: 40px;
+    height: 40px;
+    background: #0056b3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    z-index: 2; /* Sobre la línea */
+}
 
-        .timeline-icon {
-            width: 40px;
-            height: 40px;
-            background: #0056b3;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-
-        .timeline-icon.left {
-            left: -20px;
-        }
-
-        .timeline-icon.right {
-            right: -20px;
-        }
     </style>
 </head>
 <body>
