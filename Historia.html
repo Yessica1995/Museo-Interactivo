@@ -30,54 +30,93 @@
             font-size: 1.2rem;
         }
 
-        /* Sección de tarjetas */
+        /* Sección de Tarjetas */
+        .card-section {
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+
+        .card-title {
+            color: #0056b3;
+        }
+
         .card {
-            border: none;
-            border-radius: 10px;
-            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
         }
 
         .card:hover {
             transform: scale(1.05);
-            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
         }
 
-        .card img {
-            height: 150px;
-            object-fit: cover;
-        }
-
-        .timeline {
+        /* Línea de Tiempo */
+        .timeline-container {
             display: flex;
-            overflow-x: scroll;
-            padding: 20px 0;
-            gap: 15px;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            position: relative;
         }
 
-        .timeline-item {
-            min-width: 250px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            background: white;
-            text-align: center;
+        .timeline-line {
+            position: absolute;
+            width: 4px;
+            background: #0056b3;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
-        .timeline-item img {
+        .timeline-event {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 20px 0;
             width: 100%;
-            border-bottom: 3px solid #0056b3;
         }
 
-        .timeline-item h5 {
-            padding: 10px;
+        .timeline-event:nth-child(even) {
+            justify-content: flex-start;
         }
 
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
+        .timeline-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
             text-align: center;
-            padding: 20px 0;
-            margin-top: 30px;
+            position: relative;
+        }
+
+        .timeline-content h5 {
+            color: #0056b3;
+            margin: 0;
+        }
+
+        .timeline-icon {
+            width: 40px;
+            height: 40px;
+            background: #0056b3;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .timeline-icon.left {
+            left: -20px;
+        }
+
+        .timeline-icon.right {
+            right: -20px;
         }
     </style>
 </head>
@@ -86,37 +125,34 @@
     <!-- Hero Section -->
     <div class="hero">
         <h1>Historia de Croacia: Un Viaje en el Tiempo</h1>
-        <p>Explora los eventos más importantes que han dado forma a este fascinante país.</p>
+        <p>Explora la rica historia de este país a través de eventos destacados e información clave.</p>
     </div>
 
     <!-- Sección de Tarjetas -->
-    <div class="container my-5">
-        <h2 class="text-center mb-4">Eventos Históricos Destacados</h2>
+    <div class="container card-section">
+        <h2 class="text-center mb-4">Aspectos Clave</h2>
         <div class="row g-4">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="IMG/prehistoria.jpg" alt="Prehistoria">
                     <div class="card-body">
-                        <h5 class="card-title">Prehistoria y Antigüedad</h5>
-                        <p class="card-text">Desde restos neandertales hasta el legado de los romanos, Croacia tiene una historia profunda.</p>
+                        <h5 class="card-title">Diversidad Cultural</h5>
+                        <p class="card-text">Croacia ha sido moldeada por influencias romanas, bizantinas, venecianas, otomanas y austrohúngaras.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="IMG/reino.jpg" alt="Reino de Croacia">
                     <div class="card-body">
-                        <h5 class="card-title">El Reino de Croacia</h5>
-                        <p class="card-text">El duque Tomislav unificó a los croatas y fue coronado como el primer rey en el año 925.</p>
+                        <h5 class="card-title">Ubicación Estratégica</h5>
+                        <p class="card-text">Situada entre Europa central y el Mediterráneo, Croacia ha sido un puente entre Oriente y Occidente.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="IMG/independencia.jpg" alt="Independencia Moderna">
                     <div class="card-body">
-                        <h5 class="card-title">Independencia Moderna</h5>
-                        <p class="card-text">En 1991, Croacia declaró su independencia, marcando una nueva era.</p>
+                        <h5 class="card-title">Patrimonio Histórico</h5>
+                        <p class="card-text">Ciudades como Split y Zadar conservan restos romanos, medievales y renacentistas.</p>
                     </div>
                 </div>
             </div>
@@ -192,4 +228,3 @@
 
 </body>
 </html>
-
