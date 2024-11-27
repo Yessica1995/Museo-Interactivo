@@ -1,1 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museo de Croacia - Delimitación Geográfica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Barra de navegación */
+        .navbar {
+           background: linear-gradient(90deg, #1e3c72, #2a5298);
+           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+       }
+
+       .navbar .nav-link {
+           color: white !important;
+           transition: color 0.3s ease;
+       }
+
+       .navbar .nav-link:hover {
+           color: #f4d03f !important;
+       }
+
+       .navbar-brand img {
+           height: 30px;
+           margin-right: 10px;
+       }
+
+       .img-fluid:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-title {
+        font-family: 'Arial', sans-serif; 
+        color: #2a5298; 
+        font-size: 2.5rem; 
+        font-weight: bold; 
+        text-transform: uppercase; 
+        letter-spacing: 2px; 
+        text-align: center; 
+        margin-bottom: 20px; 
+        }
+
+        .section-title::after {
+            content: ""; 
+            display: block; 
+            height: 3px; 
+            background-color: #f4d03f; 
+            margin-top: 10px;
+            width: 80%; 
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Sombra para la imagen */
+        .img-fluid {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .img-fluid:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+
+        /* Footer */
+        .footer {
+                background: #1e3c72;
+                color: #ffffff;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .footer a {
+                color: #ffffff;
+                text-decoration: none;
+                margin: 0 10px;
+                transition: color 0.3s ease;
+            }
+
+            .footer a:hover {
+                color: #f4d03f;
+            }
+
+
+   </style>
+</head>
+
+<body>
+     <!-- Barra de Navegación -->
+     <nav class="navbar navbar-expand-lg" style="background-color: #e0e0e0;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="IMG/Escudo.png" alt="Bandera" style="height: 30px; margin-right: 10px;">
+                Museo de Croacia
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="explorarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Explorar
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="explorarDropdown">
+                            <li><a class="dropdown-item" href="#">Historia</a></li>
+                            <li><a class="dropdown-item" href="#">Economía</a></li>
+                            <li><a class="dropdown-item" href="#">Cultura</a></li>
+                            <li><a class="dropdown-item" href="#">Moneda</a></li>
+                            <li><a class="dropdown-item" href="#"">Gobierno</a></li>
+                            <li><a class="dropdown-item" href="#"">Conflictos Sociales</a></li>
+                            <li><a class="dropdown-item" href="delimitaciongeografica.html">Geografía</a></li>
+                            <li><a class="dropdown-item" href="salario.html">Salario</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="DatosCuriosos.html">Datos Curiosos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="EconomiaCroacia.html">Acerca De</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   <!-- Contenido Principal -->
+    <div class="container my-5">
+        <h2 class="section-title text-center mb-4">Geografía, idioma y población de Croacia</h2>
+        <img src="IMG/Bandera.jpg" class="img-fluid mx-auto d-block my-4" alt="Mapa de Croacia">
+
+       <!-- Acordeón principal -->
+        <div class="accordion" id="mainAccordion">
+
+            <!-- Cultura -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingCultura">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCultura" aria-expanded="true" aria-controls="collapseCultura">
+                        1. CULTURA
+                    </button>
+                </h2>
+                <div id="collapseCultura" class="accordion-collapse collapse show" aria-labelledby="headingCultura" data-bs-parent="#mainAccordion">
+                    <div class="accordion-body">
+                        <h5>Lengua</h5>
+                        <p>La lengua croata, oficial desde 1991, refleja la identidad y tradición del país. Es parte de las lenguas eslavas del sur.</p>
+                        <h5>Literatura</h5>
+                        <p>Grandes escritores croatas como Miroslav Krleža y Tin Ujević han dejado un legado literario inmenso.</p>
+                        <h5>Teatro</h5>
+                        <p>El Teatro Nacional Croata en Zagreb es un epicentro cultural que muestra óperas, ballets y obras teatrales.</p>
+                        <h5>Música</h5>
+                        <p>Desde música folklórica hasta festivales contemporáneos, Croacia ha sido cuna de grandes compositores y artistas.</p>
+
+                        <!-- Tarjetas -->
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="IMG/lengua.jpg" class="img-fluid card-img-top" alt="Lengua croata">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lengua</h5>
+                                        <p class="card-text">El idioma croata tiene raíces antiguas con influencias latinas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="IMG/literatura.jpg" class="img-fluid card-img-top" alt="Literatura">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Literatura</h5>
+                                        <p class="card-text">Explora las obras literarias más icónicas de Croacia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="IMG/musica.jpg" class="img-fluid card-img-top" alt="Música">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Música</h5>
+                                        <p class="card-text">La música tradicional y moderna se entrelazan en Croacia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Patrimonio Cultural -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingPatrimonio">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePatrimonio" aria-expanded="false" aria-controls="collapsePatrimonio">
+                        2. PATRIMONIO CULTURAL
+                    </button>
+                </h2>
+                <div id="collapsePatrimonio" class="accordion-collapse collapse" aria-labelledby="headingPatrimonio" data-bs-parent="#mainAccordion">
+                    <div class="accordion-body">
+                        <h5>Monumentos UNESCO</h5>
+                        <p>Incluye lugares como el casco antiguo de Dubrovnik y el Palacio de Diocleciano.</p>
+                        <h5>Artistas destacados</h5>
+                        <p>Conoce a personalidades como Ivan Meštrović, destacado escultor croata.</p>
+                        <h5>Museos y galerías</h5>
+                        <p>Desde el Museo Arqueológico hasta galerías contemporáneas en Zagreb.</p>
+
+                        <!-- Tarjetas -->
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="IMG/unesco.jpg" class="img-fluid card-img-top" alt="Monumentos UNESCO">
+                                    <div class="card-body">
+                                        <h5 class="card-title">UNESCO</h5>
+                                        <p class="card-text">Croacia alberga numerosos patrimonios mundiales de la UNESCO.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="IMG/artistas.jpg" class="img-fluid card-img-top" alt="Artistas">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Artistas</h5>
+                                        <p class="card-text">Explora la obra de artistas croatas destacados.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="IMG/museos.jpg" class="img-fluid card-img-top" alt="Museos">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Museos</h5>
+                                        <p class="card-text">Museos icónicos preservan la historia y cultura croata.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tradiciones -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTradiciones">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTradiciones" aria-expanded="false" aria-controls="collapseTradiciones">
+                        3. TRADICIONES
+                    </button>
+                </h2>
+                <div id="collapseTradiciones" class="accordion-collapse collapse" aria-labelledby="headingTradiciones" data-bs-parent="#mainAccordion">
+                    <div class="accordion-body">
+                        <h5>Artesanía y diseño</h5>
+                        <p>Desde bordados tradicionales hasta cerámica de gran calidad.</p>
+                        <h5>Fotografía</h5>
+                        <p>La fotografía croata captura tanto paisajes como momentos históricos.</p>
+                        <h5>Cultura medieval</h5>
+                        <p>Explora castillos y tradiciones que datan de la Edad Media.</p>
+
+                        <!-- Tarjetas -->
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="IMG/artesania.jpg" class="img-fluid card-img-top" alt="Artesanía">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Artesanía</h5>
+                                        <p class="card-text">Croacia es famosa por su arte en bordados y cerámica.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="IMG/fotografia.jpg" class="img-fluid card-img-top" alt="Fotografía">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Fotografía</h5>
+                                        <p class="card-text">La fotografía croata es reconocida internacionalmente.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="IMG/medieval.jpg" class="img-fluid card-img-top" alt="Cultura medieval">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cultura medieval</h5>
+                                        <p class="card-text">Los castillos croatas son testigos de su rica historia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- Pie de Página -->
+    <footer class="footer">
+        <p>Síguenos en nuestras redes sociales</p>
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube fa-lg"></i></a>
+        <p>Derechos Reservados &copy; 2024 Museo de Croacia</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
