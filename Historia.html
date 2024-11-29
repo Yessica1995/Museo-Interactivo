@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historia de Croacia</title>
+    <title>Museo de Croacia - Historia</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
+                /* Barra de navegación */
+                .navbar {
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .nav-link:hover {
+            color: #f4d03f !important;
+        }
+
+        .navbar-brand img {
+            height: 30px;
+            margin-right: 10px;
+        }
+
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f4 ;
@@ -32,6 +54,7 @@
 
         /* Sección de tarjetas */
         .card {
+            background: #a58a6f;
             border: none;
             border-radius: 10px;
             transition: transform 0.3s, box-shadow 0.3s;
@@ -71,13 +94,23 @@
             padding: 10px;
         }
 
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
+       /* Footer */
+       .footer {
+            background: #1e3c72;
+            color: #ffffff;
+            padding: 20px;
             text-align: center;
-            padding: 20px 0;
-            margin-top: 30px;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #f4d03f;
         }
     </style>
 </head>
@@ -102,7 +135,7 @@
                             Explorar
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="explorarDropdown">
-                            <li><a class="dropdown-item" href="#">Historia</a></li>
+                            <li><a class="dropdown-item" href="Historia.html">Historia</a></li>
                             <li><a class="dropdown-item" href="#">Economía</a></li>
                             <li><a class="dropdown-item" href="#">Cultura</a></li>
                             <li><a class="dropdown-item" href="#">Moneda</a></li>
@@ -123,11 +156,14 @@
         </div>
     </nav>
 
+    <div class="container my-5">
     <!-- Hero Section -->
+    <div class="container my-4">
     <div class="hero">
         <h1>Historia de Croacia: Un Viaje en el Tiempo</h1>
         <p>La historia de Croacia abarca más de dos mil años, marcada por períodos de grandeza y de lucha constante por la soberanía, enfrentándose a imperios poderosos, invasiones extranjeras, y disputas internas. Si bien hoy en día es un país joven y próspero, independizado en 1991, sus raíces históricas son profundas, reflejando la resiliencia de su pueblo a lo largo de los siglos. Esta nación, formada por una población de origen eslavo, ha sido escenario de una mezcla única de influencias romanas, bizantinas, venecianas, otomanas, y austrohúngaras, así como de conflictos nacionales y regionales que marcaron su camino hacia la independencia y la integración en las estructuras europeas.</p>
     </div>
+</div>
 
     <!-- Sección de Tarjetas -->
     <div class="container my-5">
@@ -172,6 +208,16 @@ El reino de Croacia se consideró un "baluarte de la cristiandad". En 1102, tras
                 <div class="card">
                     <img src="IMG/independencia.jpg" alt="Independencia Moderna">
                     <div class="card-body">
+                        <h5 class="card-title">Croacia en el siglo XIX y principios del XX</h5>
+                        <p class="card-text">Con la caída de Venecia en 1797 y el breve dominio napoleónico en las Provincias Ilirias (1809-1813), Croacia quedó completamente bajo el control de los Habsburgo. En 1868, Croacia logró autonomía dentro del Reino de Hungría, aunque las tensiones nacionalistas crecieron.
+                            Tras la Primera Guerra Mundial y la disolución del Imperio austrohúngaro, Croacia se incorporó al Reino de los Serbios, Croatas y Eslovenos, que más tarde se renombró como Yugoslavia. Esta unión generó conflictos internos debido a las diferencias políticas y culturales entre croatas y serbios. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="IMG/independencia.jpg" alt="Independencia Moderna">
+                    <div class="card-body">
                         <h5 class="card-title">Independencia Moderna</h5>
                         <p class="card-text">DDurante la Segunda Guerra Mundial, Croacia declaró su independencia bajo un régimen fascista. Tras el fin de la guerra, Yugoslavia fue reunificada bajo Tito y Croacia se convirtió en una república dentro del régimen comunista.
 
@@ -188,42 +234,42 @@ En 1991, Croacia declaró su independencia, lo que desató una guerra con las fu
         <h2 class="text-center mb-4">Línea de Tiempo</h2>
         <div class="timeline">
             <div class="timeline-item">
-                <img src="IMG/paleolitico.jpg" alt="Paleolítico">
                 <h5>Período Paleolítico</h5>
                 <p>Asentamientos humanos iniciales con hallazgos de neandertales en Krapina.</p>
             </div>
             <div class="timeline-item">
-                <img src="IMG/edad-hierro.jpg" alt="Edad del Hierro">
                 <h5>Edad del Hierro</h5>
                 <p>Dominio de los ilirios y celtas.</p>
             </div>
             <div class="timeline-item">
-                <img src="IMG/imperio-romano.jpg" alt="Imperio Romano">
                 <h5>Dominio Romano</h5>
                 <p>Integración en las provincias de Panonia y Dalmacia.</p>
             </div>
             <div class="timeline-item">
-                <img src="IMG/imperio-romano.jpg" alt="Imperio Romano">
                 <h5>Siglo II a.C.</h5>
                 <p>Conquista romana, desarrollo urbano y creación de ciudades como Split y Zadar.</p>
             </div>
              <div class="timeline-item">
-                <img src="IMG/imperio-romano.jpg" alt="Imperio Romano">
                 <h5>925 d.C.</h5>
                 <p>Coronación del primer rey croata, Tomislav.</p>
             </div>
              <div class="timeline-item">
-                <img src="IMG/imperio-romano.jpg" alt="Imperio Romano">
                 <h5>1991</h5>
                 <p>Declaración de independencia tras la disolución de Yugoslavia.</p>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        &copy; 2024 Historia de Croacia. Todos los derechos reservados.
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>Síguenos en nuestras redes sociales</p>
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+        <p>Derechos Reservados &copy; 2024 Museo de Croacia</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
