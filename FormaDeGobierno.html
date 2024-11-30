@@ -1,1 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museo de Croacia - Forma de Gobierno </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+                /* Barra de navegación */
+                .navbar {
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .nav-link:hover {
+            color: #f4d03f !important;
+        }
+
+        .navbar-brand img {
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4 ;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('IMG/croacia-bg.jpg') no-repeat center center/cover;
+            color: black;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        /* Sección de tarjetas */
+        .card {
+            background: #a58a6f;
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .timeline {
+            display: flex;
+            overflow-x: scroll;
+            padding: 20px 0;
+            gap: 15px;
+        }
+
+        .timeline-item {
+            min-width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background: white;
+            text-align: center;
+        }
+
+        .timeline-item img {
+            width: 100%;
+            border-bottom: 3px solid #0056b3;
+        }
+
+        .timeline-item h5 {
+            padding: 10px;
+        }
+
+       /* Footer */
+       .footer {
+            background: #1e3c72;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #f4d03f;
+        }
+    </style>
+</head>
+    <body>
+     <!-- Barra de Navegación -->
+     <nav class="navbar navbar-expand-lg" style="background-color: #e0e0e0;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="IMG/Escudo.png" alt="Bandera" style="height: 30px; margin-right: 10px;">
+                Museo de Croacia
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="explorarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Explorar
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="explorarDropdown">
+                            <li><a class="dropdown-item" href="Historia.html">Historia</a></li>
+                            <li><a class="dropdown-item" href="#">Economía</a></li>
+                            <li><a class="dropdown-item" href="#">Cultura</a></li>
+                            <li><a class="dropdown-item" href="#">Moneda</a></li>
+                            <li><a class="dropdown-item" href="#"">Gobierno</a></li>
+                            <li><a class="dropdown-item" href="#"">Conflictos Sociales</a></li>
+                            <li><a class="dropdown-item" href="delimitaciongeografica.html">Geografía</a></li>
+                            <li><a class="dropdown-item" href="salario.html">Salario</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="DatosCuriosos.html">Datos Curiosos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="EconomiaCroacia.html">Acerca De</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+    <!-- Hero Section -->
+    <div class="container my-4">
+    <div class="hero">
+        <h1>Forma de Gobierno</h1>
+        Croacia, ubicada en el sureste de Europa en la región de los Balcanes, es una república parlamentaria unitaria. Su sistema político se basa en la Constitución de 1990, que marcó el comienzo de su independencia tras la disolución de Yugoslavia. Como miembro de la Unión Europea desde 2013, la OTAN desde 2009 y la ONU desde 1992, Croacia ha consolidado su posición como un estado democrático y moderno.
+        Croacia es una república parlamentaria democrática unitaria. Tras el colapso de la Liga Comunista en el poder, Croacia adoptó una nueva constitución en 1990 –que sustituyó a la de 1974 adoptada por la República Socialista de Croacia– y organizó sus primeras elecciones multipartidistas.</p>
+    </div>
+</div>
+
+<!-- Carrusel -->
+<div id="carouselExampleIndicators" class="carousel slide container my-5" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="d-flex flex-column justify-content-center align-items-center" style="min-height: 300px; background-color: #a58a6f; color: white;">
+                <h2>Forma de Gobierno</h2>
+                <p>Tipo de gobierno:
+                    Croacia es una república parlamentaria democrática, donde el parlamento (Sabor) tiene el papel central en la toma de decisiones políticas
+                    Constitución:
+                    Se rige por la Constitución de 1990, que establece los principios democráticos, la protección de derechos y la organización del Estado</p>
+                   <img src="IMG/g.webp" class="d-block w-80" alt="Forma de Gobierno" style="max-width: 40%; height: auto;">
+                </div>
+        </div>
+        <div class="carousel-item">
+            <div class="d-flex flex-column justify-content-center align-items-center" style="min-height: 300px; background-color: #1e3c72; color: white;">
+                <h2>Poder Ejecutivo</h2>
+                <p> Presidencia:
+                    Rol: El presidente es el jefe de Estado, responsable de representar a Croacia en el ámbito internacional, comandar las fuerzas armadas y colaborar en la política exterior.
+                    Elección: Es elegido por voto directo cada cinco años, con un límite de dos mandatos consecutivos​
+                    Primer Ministro:
+                    Rol: Es el jefe de Gobierno, encargado de implementar las políticas internas y externas y dirigir la administración pública.
+                    Nombramiento: Es propuesto por el presidente y requiere la aprobación del Parlamento.</p>
+                    <img src="IMG/a.webp" class="d-block w-80" alt="Poder Ejecutivo" style="max-width: 40%; height: auto;">
+                </div>
+        </div>
+        <div class="carousel-item">
+            <div class="d-flex flex-column justify-content-center align-items-center" style="min-height: 300px; background-color: #2a5298; color: white;">
+                <h2>Poder Legislativo</h2>
+                <p>Estructura:
+                    El Sabor es el parlamento unicameral de Croacia.
+                    Tiene 151 miembros, elegidos por cuatro años mediante un sistema de representación proporcional​
+                    Funciones:
+                    Aprueba leyes, supervisa al Ejecutivo, decide sobre el presupuesto y ratifica tratados internacionales</p>
+                    <img src="IMG/i..webp" class="d-block w-80" alt="Poder Legislativo" style="max-width: 40%; height: auto;">
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="d-flex flex-column justify-content-center align-items-center" style="min-height: 300px; background-color: #2a5298; color: white;">
+                <h2>Poder Judicial</h2>
+                <p>Sistema:
+                    Es independiente de los otros poderes y protege la legalidad y los derechos de los ciudadanos. Incluye tribunales locales, regionales y de apelación.
+                    Corte Constitucional:
+                    Garantiza la constitucionalidad de las leyes y resuelve conflictos entre poderes del Estado​.</p>
+                    <img src="IMG/t.webp" class="d-block w-80" alt="Poder Judicial" style="max-width: 70%; height: auto;">
+                </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="d-flex flex-column justify-content-center align-items-center" style="min-height: 300px; background-color: #2a5298; color: white;">
+                <h2>División Administrativa</h2>
+                <p> Regiones:
+                    Croacia se divide en 20 condados (županije) y la ciudad de Zagreb, que tiene un estatus especial como unidad administrativa autónoma​
+                    Gobiernos locales:
+                    Las regiones y ciudades tienen cierto grado de autonomía en áreas como educación, salud y transporte.</p>
+                    <img src="IMG/a..webp" class="d-block w-80" alt="División Administrativa" style="max-width: 70%; height: auto;">
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="d-flex flex-column justify-content-center align-items-center" style="min-height: 300px; background-color: #2a5298; color: white;">
+                <h2> Participación Internacional</h2>
+                 <p>Croacia es miembro de la Unión Europea desde 2013, de la OTAN desde 2009 y de la ONU desde 1992. También participa activamente en el Consejo de Europa y la OSCE​</p>
+                    <img src="IMG/n.webp" class="d-block w-80" alt="Participación Internacional" style="max-width: 70%; height: auto;">
+                </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="d-flex flex-column justify-content-center align-items-center" style="min-height: 300px; background-color: #2a5298; color: white;">
+                <h2>Conclusion </h2>
+                 <p>Croacia es una república estable y democrática con instituciones sólidas que garantizan la separación de poderes. Su integración en organismos internacionales refuerza su posición como un actor clave en la región de los Balcanes​​</p>
+                    <img src="IMG/c.webp" class="d-block w-80" alt="Conclusion" style="max-width: 40%; height: auto;">
+                </div>
+        </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>Síguenos en nuestras redes sociales</p>
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+        <p>Derechos Reservados &copy; 2024 Museo de Croacia</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
 
