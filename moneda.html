@@ -13,7 +13,7 @@
             color: #333;
         }
         header {
-            background-color: #003366;
+            background: linear-gradient(90deg, #003366, #ff7e5f);
             color: #fff;
             padding: 30px 0;
             text-align: center;
@@ -34,7 +34,7 @@
             text-align: center;
         }
         h2 {
-            color: #003366;
+            color: #ff7e5f;
             font-size: 1.8em;
         }
         .stats {
@@ -57,7 +57,7 @@
         }
         .stat-item p {
             font-size: 2em;
-            color: #003366;
+            color: #ff7e5f;
             margin: 5px 0;
         }
         .description {
@@ -86,8 +86,16 @@
             width: 100%;
             border-radius: 10px;
         }
+        .chart-section {
+            margin: 30px 0;
+        }
+        .chart-section canvas {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+        }
         footer {
-            background-color: #003366;
+            background: linear-gradient(90deg, #003366, #ff7e5f);
             color: white;
             text-align: center;
             padding: 20px 0;
@@ -129,16 +137,47 @@
                 <p>La tasa oficial de conversión establecida para la transición al Euro fue de <strong>1 EUR = 7.53450 HRK</strong>.</p>
                 <a href="https://www.xe.com/" target="_blank" class="button">Consulta las tasas actuales</a>
             </div>
+            <div class="chart-section">
+                <canvas id="exchangeChart"></canvas>
+            </div>
             <div class="image-section">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Kuna_to_euro_conversion_chart.jpg/800px-Kuna_to_euro_conversion_chart.jpg" alt="Transición Kuna a Euro">
+                <img src="kk-ee.jpg" alt="Cambio de moneda - Kuna a Euro">
             </div>
         </div>
     </div>
     <footer>
         Museo de Croacia &copy; 2024 - Conversión de Moneda
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('exchangeChart').getContext('2d');
+        const exchangeChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Día 1', 'Día 5', 'Día 10', 'Día 15', 'Día 20', 'Día 25', 'Día 30'],
+                datasets: [{
+                    label: 'Tasa de conversión EUR a HRK',
+                    data: [7.45, 7.47, 7.50, 7.51, 7.52, 7.56, 7.58],
+                    borderColor: '#ff7e5f',
+                    backgroundColor: 'rgba(255, 126, 95, 0.2)',
+                    borderWidth: 3,
+                    fill: true,
+                    pointBackgroundColor: '#003366',
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: false
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 </html>
 
-  
       
+     
