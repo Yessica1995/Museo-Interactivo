@@ -3,150 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Museo de Croacia - Información de Moneda</title>
+    <title>Conversión de Moneda - Museo de Croacia</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
+            background-color: #f0f4f8;
             color: #333;
         }
         header {
-            background: #003366;
+            background-color: #003366;
             color: #fff;
-            padding: 20px 0;
+            padding: 30px 0;
             text-align: center;
+            font-size: 2em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
-        header h1 {
-            font-size: 2.8em;
-            margin: 0;
-        }
-        nav {
-            background: #004080;
-            color: white;
+        .container {
             display: flex;
             justify-content: center;
-            padding: 10px 0;
+            margin: 30px;
         }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0 20px;
-            font-size: 1.1em;
+        .conversion-box {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            padding: 30px;
+            text-align: center;
         }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        main {
-            padding: 20px;
-        }
-        .currency-info {
-            background: white;
-            border-radius: 10px;
-            padding: 25px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .currency-info h2 {
+        h2 {
             color: #003366;
-            font-size: 2em;
-            margin-bottom: 15px;
+            font-size: 1.8em;
         }
-        .currency-info p, li {
-            font-size: 1.1em;
-            margin-bottom: 10px;
-        }
-        .currency-images img {
-            width: 100%;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-        .highlight-box {
-            background-color: #e6f7ff;
-            border-left: 5px solid #003366;
-            padding: 15px;
+        .stats {
+            display: flex;
+            justify-content: space-around;
             margin: 20px 0;
         }
+        .stat-item {
+            text-align: center;
+            width: 23%;
+        }
+        .stat-item img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+        .stat-item span {
+            display: block;
+            font-size: 1.1em;
+            color: #555;
+        }
+        .stat-item p {
+            font-size: 2em;
+            color: #003366;
+            margin: 5px 0;
+        }
+        .description {
+            font-size: 1.2em;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+        .button {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+        .image-section {
+            margin-top: 30px;
+        }
+        .image-section img {
+            width: 100%;
+            border-radius: 10px;
+        }
         footer {
-            background: #003366;
+            background-color: #003366;
             color: white;
             text-align: center;
-            padding: 15px 0;
-            margin-top: 20px;
-            font-size: 1.1em;
-        }
-        a {
-            color: #003366;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .link-list {
-            list-style: none;
-            padding: 0;
-        }
-        .link-list li {
-            margin: 10px 0;
-        }
-        .currency-stats {
-            background-color: #f9f9f9;
-            padding: 15px;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-        .currency-stats p {
-            margin: 5px 0;
+            padding: 20px 0;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Museo de Croacia - Información de Moneda</h1>
-        <nav>
-            <a href="#historia">Historia</a>
-            <a href="#transicion">Transición al Euro</a>
-            <a href="#conversores">Conversores</a>
-        </nav>
+        Conversión de Moneda - Croacia
     </header>
-    <main>
-        <section class="currency-info" id="historia">
-            <h2>Historia de la Moneda en Croacia</h2>
-            <p>Hasta el 31 de diciembre de 2022, Croacia utilizaba la Kuna Croata (HRK) como su moneda oficial. La kuna fue reemplazada por el euro el 1 de enero de 2023.</p>
-            <div class="currency-images">
-                <img src="https://example.com/kuna-euro.jpg" alt="Cambio de moneda - Kuna a Euro">
+    <div class="container">
+        <div class="conversion-box">
+            <h2>Estadísticas de 1 EUR a HRK (Kuna Croata)</h2>
+            <div class="stats">
+                <div class="stat-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt="Máximo">
+                    <span>Máximo (30 días)</span>
+                    <p>7.58</p>
+                </div>
+                <div class="stat-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3144/3144429.png" alt="Mínimo">
+                    <span>Mínimo (30 días)</span>
+                    <p>7.45</p>
+                </div>
+                <div class="stat-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3144/3144465.png" alt="Media">
+                    <span>Media</span>
+                    <p>7.51</p>
+                </div>
+                <div class="stat-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3144/3144470.png" alt="Fluctuación">
+                    <span>Fluctuación</span>
+                    <p>-1.72%</p>
+                </div>
             </div>
-        </section>
-
-        <section class="currency-info" id="transicion">
-            <h2>La Transición al Euro (€)</h2>
-            <div class="highlight-box">
-                <p><strong>La tasa de conversión oficial:</strong> 1 EUR = 7.53450 HRK.</p>
+            <div class="description">
+                <p>El rendimiento del Euro frente a la Kuna Croata en los últimos 30 días ha experimentado un máximo de <strong>7.58</strong> y un mínimo de <strong>7.45</strong>. La media fue de <strong>7.51</strong>, con una fluctuación de <span style="color:#d9534f;">-1.72%</span>.</p>
+                <p>La tasa oficial de conversión establecida para la transición al Euro fue de <strong>1 EUR = 7.53450 HRK</strong>.</p>
+                <a href="https://www.xe.com/" target="_blank" class="button">Consulta las tasas actuales</a>
             </div>
-            <p>La transición al euro ha mejorado la estabilidad económica, facilitando el comercio y turismo. Durante el período de adaptación, los precios se mostraban en ambas monedas.</p>
-        </section>
-
-        <section class="currency-info" id="conversores">
-            <h2>Conversores de Moneda</h2>
-            <ul class="link-list">
-                <li><a href="https://www.xe.com/" target="_blank">XE Currency Converter</a></li>
-                <li><a href="https://www.oanda.com/" target="_blank">OANDA Currency Converter</a></li>
-            </ul>
-            <div class="currency-stats">
-                <h3>Estadísticas de 1 EUR a USD</h3>
-                <p><strong>Máximo (30 días):</strong> 1.0932</p>
-                <p><strong>Mínimo (30 días):</strong> 1.0419</p>
-                <p><strong>Media:</strong> 1.0635</p>
+            <div class="image-section">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Kuna_to_euro_conversion_chart.jpg/800px-Kuna_to_euro_conversion_chart.jpg" alt="Transición Kuna a Euro">
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
     <footer>
-        <p>Museo de Croacia &copy; 2024</p>
+        Museo de Croacia &copy; 2024 - Conversión de Moneda
     </footer>
 </body>
 </html>
 
-       
+  
       
