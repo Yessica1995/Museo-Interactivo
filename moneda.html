@@ -3,109 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Museo de Croacia - Moneda</title>
+    <title>Museo de Croacia - Información de Moneda</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f2f2f2;
             color: #333;
         }
         header {
             background: #003366;
             color: #fff;
-            padding: 20px 15px;
+            padding: 20px 0;
             text-align: center;
         }
         header h1 {
-            font-size: 2.5em;
+            font-size: 2.8em;
+            margin: 0;
+        }
+        nav {
+            background: #004080;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 20px;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         main {
             padding: 20px;
         }
         .currency-info {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 20px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .currency-info h2 {
-            margin-top: 0;
             color: #003366;
-            font-size: 1.8em;
+            font-size: 2em;
+            margin-bottom: 15px;
         }
-        .currency-info p {
+        .currency-info p, li {
             font-size: 1.1em;
-        }
-        .currency-info ul {
-            list-style-type: square;
-            padding-left: 20px;
-        }
-        .currency-info a {
-            color: #003366;
-            text-decoration: none;
-        }
-        .currency-info a:hover {
-            text-decoration: underline;
+            margin-bottom: 10px;
         }
         .currency-images img {
             width: 100%;
-            border-radius: 8px;
-            margin: 15px 0;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .highlight-box {
+            background-color: #e6f7ff;
+            border-left: 5px solid #003366;
+            padding: 15px;
+            margin: 20px 0;
         }
         footer {
             background: #003366;
-            color: #fff;
+            color: white;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 15px 0;
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+        a {
+            color: #003366;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .link-list {
+            list-style: none;
+            padding: 0;
+        }
+        .link-list li {
+            margin: 10px 0;
+        }
+        .currency-stats {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .currency-stats p {
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Museo de Croacia - Información de Moneda</h1>
+        <nav>
+            <a href="#historia">Historia</a>
+            <a href="#transicion">Transición al Euro</a>
+            <a href="#conversores">Conversores</a>
+        </nav>
     </header>
     <main>
-        <section class="currency-info">
-            <h2>Moneda Local: Kuna Croata (HRK)</h2>
-            <p>Hasta el 31 de diciembre de 2022, Croacia utilizó la Kuna Croata (HRK) como su moneda oficial. A partir del 1 de enero de 2023, el euro (€) se adoptó oficialmente como la nueva moneda de Croacia.</p>
-            
-            <h3>Transición al Euro</h3>
-            <p>La transición al euro ha traído varios beneficios, incluyendo la eliminación de los costos de cambio de divisas, lo que facilita el comercio y turismo, además de estabilizar la economía croata dentro de la Eurozona.</p>
-            
+        <section class="currency-info" id="historia">
+            <h2>Historia de la Moneda en Croacia</h2>
+            <p>Hasta el 31 de diciembre de 2022, Croacia utilizaba la Kuna Croata (HRK) como su moneda oficial. La kuna fue reemplazada por el euro el 1 de enero de 2023.</p>
             <div class="currency-images">
                 <img src="https://example.com/kuna-euro.jpg" alt="Cambio de moneda - Kuna a Euro">
             </div>
-            
-            <h3>Conversión de Kuna a Euro</h3>
-            <p>La tasa de conversión establecida para el cambio de kuna a euro es de 1 EUR = 7.53450 HRK.</p>
-            <p>Durante el período de transición, los precios se mostraron en ambas monedas, lo que facilitó la adaptación de los ciudadanos al nuevo sistema.</p>
-            
-            <h3>Impacto en la Economía</h3>
-            <p>El ingreso a la Eurozona también ha implicado que Croacia ahora forme parte del Sistema Europeo de Bancos Centrales. Esto ofrece mayor estabilidad económica y acceso a los mercados financieros de Europa.</p>
         </section>
-        
-        <section class="currency-info">
-            <h2>Convertidores de Moneda</h2>
-            <p>Puedes consultar la conversión en tiempo real en los siguientes enlaces:</p>
-            <ul>
+
+        <section class="currency-info" id="transicion">
+            <h2>La Transición al Euro (€)</h2>
+            <div class="highlight-box">
+                <p><strong>La tasa de conversión oficial:</strong> 1 EUR = 7.53450 HRK.</p>
+            </div>
+            <p>La transición al euro ha mejorado la estabilidad económica, facilitando el comercio y turismo. Durante el período de adaptación, los precios se mostraban en ambas monedas.</p>
+        </section>
+
+        <section class="currency-info" id="conversores">
+            <h2>Conversores de Moneda</h2>
+            <ul class="link-list">
                 <li><a href="https://www.xe.com/" target="_blank">XE Currency Converter</a></li>
                 <li><a href="https://www.oanda.com/" target="_blank">OANDA Currency Converter</a></li>
             </ul>
-        </section>
-
-        <section class="currency-info">
-            <h2>Imágenes de la Transición</h2>
-            <p>A continuación, algunos gráficos e imágenes que muestran el proceso de transición de la Kuna al Euro en Croacia:</p>
-            <div class="currency-images">
-                <img src="https://example.com/euro-transition.jpg" alt="Gráfico de transición del Euro">
+            <div class="currency-stats">
+                <h3>Estadísticas de 1 EUR a USD</h3>
+                <p><strong>Máximo (30 días):</strong> 1.0932</p>
+                <p><strong>Mínimo (30 días):</strong> 1.0419</p>
+                <p><strong>Media:</strong> 1.0635</p>
             </div>
         </section>
     </main>
@@ -114,3 +147,6 @@
     </footer>
 </body>
 </html>
+
+       
+      
