@@ -7,7 +7,6 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            line-height: 1.6;
             margin: 0;
             padding: 0;
             background-color: #f0f4f8;
@@ -20,21 +19,6 @@
             text-align: center;
             font-size: 2em;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-        nav {
-            background: #004080;
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0 20px;
-            font-size: 1.1em;
-        }
-        nav a:hover {
-            text-decoration: underline;
         }
         .container {
             display: flex;
@@ -52,7 +36,6 @@
         h2 {
             color: #ff7e5f;
             font-size: 1.8em;
-            margin-bottom: 20px;
         }
         .stats {
             display: flex;
@@ -77,11 +60,10 @@
             color: #ff7e5f;
             margin: 5px 0;
         }
-        .highlight-box {
-            background-color: #e6f7ff;
-            border-left: 5px solid #003366;
-            padding: 15px;
-            margin: 20px 0;
+        .description {
+            font-size: 1.2em;
+            margin-top: 20px;
+            line-height: 1.6;
         }
         .button {
             display: inline-block;
@@ -97,6 +79,13 @@
         .button:hover {
             background-color: #218838;
         }
+        .image-section {
+            margin-top: 30px;
+        }
+        .image-section img {
+            width: 100%;
+            border-radius: 10px;
+        }
         .chart-section {
             margin: 30px 0;
         }
@@ -104,11 +93,6 @@
             width: 100%;
             max-width: 600px;
             margin: auto;
-        }
-        .image-section img {
-            width: 100%;
-            border-radius: 10px;
-            margin-top: 20px;
         }
         footer {
             background: linear-gradient(90deg, #003366, #ff7e5f);
@@ -121,64 +105,46 @@
 </head>
 <body>
     <header>
-        Conversión de Moneda - Museo de Croacia
+        Conversión de Moneda - Croacia
     </header>
-    <nav>
-        <a href="#historia">Historia</a>
-        <a href="#transicion">Transición al Euro</a>
-        <a href="#conversores">Conversores</a>
-    </nav>
     <div class="container">
         <div class="conversion-box">
-            <section id="historia">
-                <h2>Historia de la Moneda en Croacia</h2>
-                <p>Hasta el 31 de diciembre de 2022, Croacia utilizaba la Kuna Croata (HRK) como su moneda oficial. La kuna fue reemplazada por el euro el 1 de enero de 2023.</p>
-                <div class="image-section">
-                    <img src="https://example.com/kuna-euro.jpg" alt="Cambio de moneda - Kuna a Euro">
+            <h2>Estadísticas de 1 EUR a HRK (Kuna Croata)</h2>
+            <div class="stats">
+                <div class="stat-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt="Máximo">
+                    <span>Máximo (30 días)</span>
+                    <p>7.58</p>
                 </div>
-            </section>
-
-            <section id="transicion">
-                <h2>La Transición al Euro (€)</h2>
-                <div class="highlight-box">
-                    <p><strong>Tasa de conversión oficial:</strong> 1 EUR = 7.53450 HRK.</p>
+                <div class="stat-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3144/3144429.png" alt="Mínimo">
+                    <span>Mínimo (30 días)</span>
+                    <p>7.45</p>
                 </div>
-                <p>La transición al euro ha mejorado la estabilidad económica, facilitando el comercio y turismo. Durante el período de adaptación, los precios se mostraban en ambas monedas.</p>
-            </section>
-
-            <section id="conversores">
-                <h2>Conversores de Moneda</h2>
-                <div class="stats">
-                    <div class="stat-item">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt="Máximo">
-                        <span>Máximo (30 días)</span>
-                        <p>7.58</p>
-                    </div>
-                    <div class="stat-item">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3144/3144429.png" alt="Mínimo">
-                        <span>Mínimo (30 días)</span>
-                        <p>7.45</p>
-                    </div>
-                    <div class="stat-item">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3144/3144465.png" alt="Media">
-                        <span>Media</span>
-                        <p>7.51</p>
-                    </div>
-                    <div class="stat-item">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3144/3144470.png" alt="Fluctuación">
-                        <span>Fluctuación</span>
-                        <p>-1.72%</p>
-                    </div>
+                <div class="stat-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3144/3144470.png" alt="Media">
+                    <span>Media</span>
+                    <p>7.51</p>
                 </div>
+                <div class="stat-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3144/3144465.png" alt="Fluctuación">
+                    <span>Fluctuación</span>
+                    <p>-1.72%</p>
+                </div>
+            </div>
+            <div class="description">
+                <p>El rendimiento del Euro frente a la Kuna Croata en los últimos 30 días ha experimentado un máximo de <strong>7.58</strong> y un mínimo de <strong>7.45</strong>. La media fue de <strong>7.51</strong>, con una fluctuación de <span style="color:#d9534f;">-1.72%</span>.</p>
+                <p>La tasa oficial de conversión establecida para la transición al Euro fue de <strong>1 EUR = 7.53450 HRK</strong>.</p>
                 <a href="https://www.xe.com/" target="_blank" class="button">Consulta las tasas actuales</a>
-            </section>
-
+            </div>
             <div class="chart-section">
                 <canvas id="exchangeChart"></canvas>
             </div>
+            <div class="image-section">
+                <img src="https://example.com/kuna-euro.jpg" alt="Cambio de moneda - Kuna a Euro">
+            </div>
         </div>
     </div>
-
     <footer>
         Museo de Croacia &copy; 2024 - Conversión de Moneda
     </footer>
