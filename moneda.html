@@ -16,8 +16,11 @@
         header {
             background: #003366;
             color: #fff;
-            padding: 10px 15px;
+            padding: 20px 15px;
             text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
         }
         main {
             padding: 20px;
@@ -25,13 +28,34 @@
         .currency-info {
             background: #fff;
             border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 15px;
-            margin: 15px 0;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         .currency-info h2 {
             margin-top: 0;
             color: #003366;
+            font-size: 1.8em;
+        }
+        .currency-info p {
+            font-size: 1.1em;
+        }
+        .currency-info ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        .currency-info a {
+            color: #003366;
+            text-decoration: none;
+        }
+        .currency-info a:hover {
+            text-decoration: underline;
+        }
+        .currency-images img {
+            width: 100%;
+            border-radius: 8px;
+            margin: 15px 0;
         }
         footer {
             background: #003366;
@@ -51,20 +75,38 @@
     <main>
         <section class="currency-info">
             <h2>Moneda Local: Kuna Croata (HRK)</h2>
-            <p>Desde enero de 2023, Croacia adoptó el Euro como moneda oficial, reemplazando la Kuna Croata (HRK).</p>
-            <h3>Conversiones Populares:</h3>
-            <ul>
-                <li>1 EUR = 7.53 HRK (aproximadamente antes del cambio).</li>
-                <li>Consulta tasas actuales en bancos locales o sitios de cambio de divisas.</li>
-            </ul>
+            <p>Hasta el 31 de diciembre de 2022, Croacia utilizó la Kuna Croata (HRK) como su moneda oficial. A partir del 1 de enero de 2023, el euro (€) se adoptó oficialmente como la nueva moneda de Croacia.</p>
+            
+            <h3>Transición al Euro</h3>
+            <p>La transición al euro ha traído varios beneficios, incluyendo la eliminación de los costos de cambio de divisas, lo que facilita el comercio y turismo, además de estabilizar la economía croata dentro de la Eurozona.</p>
+            
+            <div class="currency-images">
+                <img src="https://example.com/kuna-euro.jpg" alt="Cambio de moneda - Kuna a Euro">
+            </div>
+            
+            <h3>Conversión de Kuna a Euro</h3>
+            <p>La tasa de conversión establecida para el cambio de kuna a euro es de 1 EUR = 7.53450 HRK.</p>
+            <p>Durante el período de transición, los precios se mostraron en ambas monedas, lo que facilitó la adaptación de los ciudadanos al nuevo sistema.</p>
+            
+            <h3>Impacto en la Economía</h3>
+            <p>El ingreso a la Eurozona también ha implicado que Croacia ahora forme parte del Sistema Europeo de Bancos Centrales. Esto ofrece mayor estabilidad económica y acceso a los mercados financieros de Europa.</p>
         </section>
+        
         <section class="currency-info">
             <h2>Convertidores de Moneda</h2>
-            <p>Puedes consultar la conversión en tiempo real en:</p>
+            <p>Puedes consultar la conversión en tiempo real en los siguientes enlaces:</p>
             <ul>
                 <li><a href="https://www.xe.com/" target="_blank">XE Currency Converter</a></li>
                 <li><a href="https://www.oanda.com/" target="_blank">OANDA Currency Converter</a></li>
             </ul>
+        </section>
+
+        <section class="currency-info">
+            <h2>Imágenes de la Transición</h2>
+            <p>A continuación, algunos gráficos e imágenes que muestran el proceso de transición de la Kuna al Euro en Croacia:</p>
+            <div class="currency-images">
+                <img src="https://example.com/euro-transition.jpg" alt="Gráfico de transición del Euro">
+            </div>
         </section>
     </main>
     <footer>
@@ -72,4 +114,3 @@
     </footer>
 </body>
 </html>
-
