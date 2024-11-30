@@ -1,10 +1,173 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cambio de Moneda en Croacia: Kuna a Euro</title>
+    <title>Museo de Croacia - Salario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
+
+        /* Barra de navegación */
+        .navbar {
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .nav-link:hover {
+            color: #f4d03f !important;
+        }
+
+        .navbar-brand img {
+            height: 30px;
+            margin-right: 10px;
+        }
+
+
+        /* Hero Banner */
+        .hero-banner {
+            position: relative;
+            height: 400px;
+            background: url("IMG/Zagreb.jpg") center/cover no-repeat;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-banner h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+            text-align: center;
+        }
+        /* Títulos con fondo de colores */
+        .card-title {
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        .card-title.salario {
+            background-color: blue;
+        }
+
+        .card-title.calidad {
+            background-color: aqua;
+            color: black;
+        }
+
+       
+
+        .divider::before,
+        .divider::after {
+            content: "";
+            display: inline-block;
+            width: 40%;
+            height: 1px;
+            background: #ccc;
+            vertical-align: middle;
+            margin: 0 5px;
+        }
+
+        .divider span {
+            font-size: 12px;
+            color: gray;
+            vertical-align: middle;
+        }
+
+        /* Asegurar tamaños uniformes en las tarjetas */
+        .card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .card-text {
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+       .footer {
+            background: #1e3c72;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #f4d03f;
+        }
+    </style>
+</head>
+
+<body>
+     <!-- Barra de Navegación -->
+     <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="IMG/Escudo.png" alt="Bandera">
+                Museo de Croacia
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="explorarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Explorar
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="explorarDropdown">
+                            <li><a class="dropdown-item" href="#">Historia</a></li>
+                            <li><a class="dropdown-item" href="#">Economía</a></li>
+                            <li><a class="dropdown-item" href="#">Cultura</a></li>
+                            <li><a class="dropdown-item" href="#">Moneda</a></li>
+                            <li><a class="dropdown-item" href="#"">Gobierno</a></li>
+                            <li><a class="dropdown-item" href="#"">Conflictos Sociales</a></li>
+                            <li><a class="dropdown-item" href="delimitaciongeografica.html">Geografía</a></li>
+                            <li><a class="dropdown-item" href="salario.html">Salario</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="DatosCuriosos.html">Datos Curiosos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="EconomiaCroacia.html">Acerca De</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
