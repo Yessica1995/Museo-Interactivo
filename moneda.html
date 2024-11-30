@@ -3,173 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversión de Moneda - Museo de Croacia</title>
+    <title>Cambio de Moneda en Croacia: Kuna a Euro</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f4f8;
+            background-color: #f4f4f9;
             color: #333;
         }
         header {
-            background: linear-gradient(90deg, #003366, #ff7e5f);
-            color: #fff;
-            padding: 30px 0;
-            text-align: center;
-            font-size: 2em;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-        .container {
-            display: flex;
-            justify-content: center;
-            margin: 30px;
-        }
-        .conversion-box {
-            background-color: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            padding: 30px;
-            text-align: center;
-        }
-        h2 {
-            color: #ff7e5f;
-            font-size: 1.8em;
-        }
-        .stats {
-            display: flex;
-            justify-content: space-around;
-            margin: 20px 0;
-        }
-        .stat-item {
-            text-align: center;
-            width: 23%;
-        }
-        .stat-item img {
-            width: 50px;
-            margin-bottom: 10px;
-        }
-        .stat-item span {
-            display: block;
-            font-size: 1.1em;
-            color: #555;
-        }
-        .stat-item p {
-            font-size: 2em;
-            color: #ff7e5f;
-            margin: 5px 0;
-        }
-        .description {
-            font-size: 1.2em;
-            margin-top: 20px;
-            line-height: 1.6;
-        }
-        .button {
-            display: inline-block;
-            background-color: #28a745;
+            background-color: #007BFF;
             color: white;
-            padding: 12px 25px;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #28a745;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
             text-decoration: none;
+            margin: 15px;
+            font-size: 18px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
             border-radius: 8px;
-            margin-top: 20px;
-            font-size: 1em;
-            transition: background-color 0.3s;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        .button:hover {
-            background-color: #218838;
-        }
-        .image-section {
-            margin-top: 30px;
-        }
-        .image-section img {
+        .image-container img {
             width: 100%;
-            border-radius: 10px;
-        }
-        .chart-section {
-            margin: 30px 0;
-        }
-        .chart-section canvas {
-            width: 100%;
-            max-width: 600px;
-            margin: auto;
+            height: auto;
+            border-radius: 8px;
         }
         footer {
-            background: linear-gradient(90deg, #003366, #ff7e5f);
+            background-color: #007BFF;
             color: white;
             text-align: center;
-            padding: 20px 0;
-            margin-top: 30px;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .advantages, .disadvantages {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .card {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 8px;
+            width: 45%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
-    <header>
-        Conversión de Moneda - Croacia
-    </header>
-    <div class="container">
-        <div class="conversion-box">
-            <h2>Estadísticas de 1 EUR a HRK (Kuna Croata)</h2>
-            <div class="stats">
-                <div class="stat-item">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt="Máximo">
-                    <span>Máximo (30 días)</span>
-                    <p>7.58</p>
-                </div>
-                <div class="stat-item">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3144/3144470.png" alt="Media">
-                    <span>Media</span>
-                    <p>7.51</p>
-                </div>
-                <div class="stat-item">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3144/3144465.png" alt="Fluctuación">
-                    <span>Fluctuación</span>
-                    <p>-1.72%</p>
-                </div>
-            </div>
-            <div class="description">
-                <p>El rendimiento del Euro frente a la Kuna Croata en los últimos 30 días ha experimentado un máximo de <strong>7.58</strong> y un mínimo de <strong>7.45</strong>. La media fue de <strong>7.51</strong>, con una fluctuación de <span style="color:#d9534f;">-1.72%</span>.</p>
-                <p>La tasa oficial de conversión establecida para la transición al Euro fue de <strong>1 EUR = 7.53450 HRK</strong>.</p>
-                <a href="https://www.xe.com/" target="_blank" class="button">Consulta las tasas actuales</a>
-            </div>
-            <div class="chart-section">
-                <canvas id="exchangeChart"></canvas>
-            </div>
-            <div class="image-section">
-                <img src="https://example.com/kuna-euro.jpg" alt="Cambio de moneda - Kuna a Euro">
-            </div>
+
+<header>
+    <h1>El Cambio de Moneda en Croacia: Kuna a Euro</h1>
+</header>
+
+<nav>
+    <a href="#why">¿Por qué el cambio?</a>
+    <a href="#advantages">Ventajas</a>
+    <a href="#disadvantages">Desventajas</a>
+    <a href="#convert">Convertidor de Moneda</a>
+</nav>
+
+<section id="why">
+    <h2>¿Por qué el cambio de Kuna a Euro?</h2>
+    <div class="image-container">
+        <img src="https://via.placeholder.com/1200x500.png?text=Cambio+de+Moneda+en+Croacia" alt="Cambio de Moneda en Croacia">
+    </div>
+    <p>
+        El 1 de enero de 2023, Croacia adoptó el euro como su moneda oficial, marcando el fin de su uso de la kuna (HRK) que había sido la moneda nacional desde 1994. Este cambio fue parte de un esfuerzo más amplio de integración económica con la Unión Europea, tras la adhesión del país al bloque en 2013. 
+    </p>
+    <p>
+        El objetivo es facilitar el comercio y los viajes dentro de la zona euro, reducir los costos de transacción y mejorar la estabilidad económica en el país.
+    </p>
+</section>
+
+<section id="advantages">
+    <h2>Ventajas del Cambio</h2>
+    <div class="advantages">
+        <div class="card">
+            <h3>Facilita el Comercio</h3>
+            <p>El uso del euro elimina las fluctuaciones del tipo de cambio y hace que los intercambios comerciales con otros países de la zona euro sean más fáciles y predecibles.</p>
+        </div>
+        <div class="card">
+            <h3>Mejor Turismo</h3>
+            <p>Los turistas que visitan Croacia ya no necesitan cambiar su dinero a kuna, lo que hace que el viaje sea más cómodo y menos costoso en términos de conversiones de divisas.</p>
         </div>
     </div>
-    <footer>
-        Museo de Croacia &copy; 2024 - Conversión de Moneda
-    </footer>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        const ctx = document.getElementById('exchangeChart').getContext('2d');
-        const exchangeChart = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: ['Día 1', 'Día 5', 'Día 10', 'Día 15', 'Día 20', 'Día 25', 'Día 30'],
-                datasets: [{
-                    label: 'Tasa de conversión EUR a HRK',
-                    data: [7.45, 7.47, 7.50, 7.51, 7.52, 7.56, 7.58],
-                    borderColor: '#ff7e5f',
-                    backgroundColor: 'rgba(255, 126, 95, 0.2)',
-                    borderWidth: 3,
-                    fill: true,
-                    pointBackgroundColor: '#003366',
-                }]
-            },
-            options: {
-                responsive: true,
-                scales: {
-                    y: {
-                        beginAtZero: false
-                    }
-                }
-            }
-        });
-    </script>
+<section id="disadvantages">
+    <h2>Desventajas del Cambio</h2>
+    <div class="disadvantages">
+        <div class="card">
+            <h3>Riesgo de Inflación</h3>
+            <p>Algunas personas temen que la adopción del euro pueda traer consigo un aumento en los precios debido a la mayor facilidad para ajustar los precios.</p>
+        </div>
+        <div class="card">
+            <h3>Impacto Cultural</h3>
+            <p>Para algunos, el cambio de moneda representa una pérdida de identidad cultural, ya que la kuna estaba estrechamente ligada a la historia y cultura croata.</p>
+        </div>
+    </div>
+</section>
+
+<section id="convert">
+    <h2>Convertidor de Moneda</h2>
+    <p>Usa el siguiente convertidor de moneda para saber cuánto es el valor de la kuna en euros:</p>
+    <!-- Simple HTML for a currency converter (can be integrated with an API) -->
+    <iframe src="https://www.xe.com/currencyconverter/convert/?Amount=1&From=HRK&To=EUR" width="100%" height="600px" style="border: none;"></iframe>
+</section>
+
+<footer>
+    <p>&copy; 2024 Cambio de Moneda en Croacia. Todos los derechos reservados.</p>
+</footer>
+
 </body>
 </html>
+
