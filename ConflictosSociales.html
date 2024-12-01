@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Museo de Croacia - Conflictos Sociales </title>
+    <title>Museo de Croacia - Conflictos Sociales</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
-                /* Barra de navegación */
-                .navbar {
+        /* Estilos Generales */
+        .navbar {
             background: linear-gradient(90deg, #1e3c72, #2a5298);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
@@ -30,17 +30,14 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4 ;
-            margin: 0;
-            padding: 0;
+            background-color: #f4f4f4;
         }
 
         /* Hero Section */
         .hero {
             background: url('IMG/croacia-bg.jpg') no-repeat center center/cover;
-            color: black;
+            color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-
             padding: 100px 20px;
         }
 
@@ -53,27 +50,10 @@
             font-size: 1.2rem;
         }
 
-        /* Sección de tarjetas */
-        .card {
-            background: #a58a6f;
-            border: none;
-            border-radius: 10px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        .card img {
-            height: 150px;
-            object-fit: cover;
-        }
-
+        /* Línea de Tiempo */
         .timeline {
             display: flex;
-            overflow-x: scroll;
+            overflow-x: auto;
             padding: 20px 0;
             gap: 15px;
         }
@@ -83,31 +63,47 @@
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             background: white;
+            padding: 15px;
             text-align: center;
         }
 
-        .timeline-item img {
-            width: 100%;
-            border-bottom: 3px solid #0056b3;
+        /* Estadísticas */
+        .counter {
+            font-size: 3rem;
+            color: #1e3c72;
         }
 
-        .timeline-item h5 {
-            padding: 10px;
+        /* Galería */
+        .gallery img {
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-       /* Footer */
-       .footer {
-            background: #1e3c72;
-            color: #ffffff;
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Testimonios */
+        .testimonials .testimonial {
+            background: #a58a6f;
+            color: white;
             padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        .footer {
+            background: #1e3c72;
+            color: white;
             text-align: center;
+            padding: 20px;
         }
 
         .footer a {
-            color: #ffffff;
-            text-decoration: none;
+            color: white;
             margin: 0 10px;
-            transition: color 0.3s ease;
         }
 
         .footer a:hover {
@@ -115,12 +111,13 @@
         }
     </style>
 </head>
-    <body>
-     <!-- Barra de Navegación -->
-     <nav class="navbar navbar-expand-lg" style="background-color: #e0e0e0;">
+
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="IMG/Escudo.png" alt="Bandera" style="height: 30px; margin-right: 10px;">
+                <img src="IMG/Escudo.png" alt="Bandera">
                 Museo de Croacia
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -128,143 +125,120 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="explorarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Explorar
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="explorarDropdown">
-                            <li><a class="dropdown-item" href="Historia.html">Historia</a></li>
-                            <li><a class="dropdown-item" href="#">Economía</a></li>
-                            <li><a class="dropdown-item" href="#">Cultura</a></li>
-                            <li><a class="dropdown-item" href="#">Moneda</a></li>
-                            <li><a class="dropdown-item" href="#"">Gobierno</a></li>
-                            <li><a class="dropdown-item" href="#"">Conflictos Sociales</a></li>
-                            <li><a class="dropdown-item" href="delimitaciongeografica.html">Geografía</a></li>
-                            <li><a class="dropdown-item" href="salario.html">Salario</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="ConfictosSciales.html">Conflictos Sociales</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ConfictosSciales.html">Conflictos Sociales</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container my-5">
     <!-- Hero Section -->
-    <div class="container my-4">
-    <div class="hero">
-        <h1>Conflictos Sociales</h1>
-        Los conflictos sociales en Croacia son el resultado de tensiones históricas, económicas, políticas y étnicas. Estos enfrentamientos han influido profundamente en la identidad y desarrollo del país, desde la era medieval hasta su consolidación como estado moderno. Los eventos relacionados con la disolución de Yugoslavia y la posterior independencia croata destacan como hitos críticos en su historia reciente.
-        Croacia aún lleva las cicatrices de un pasado turbulento. La Guerra de Independencia dejó profundas divisiones entre croatas y serbios, y los crímenes de guerra siguen siendo una herida abierta.</p>
+    <div class="hero text-center">
+        <h1>Conflictos Sociales en Croacia</h1>
+        <p>Desde la Edad Media hasta la era moderna, los conflictos sociales han moldeado la identidad croata.</p>
     </div>
-</div>
 
-<!-- Carrusel -->
-<div id="carouselExampleIndicators" class="carousel slide container my-5" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-    </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <div class="d-flex flex-column justify-content-center align-items-center" style="min-height: 300px; background-color: #a58a6f; color: white;">
-                <h2>Contexto Histórico</h2>
-                <p>Edad Media: En 1102, Croacia entró en una unión personal con Hungría, lo que generó tensiones políticas debido a la pérdida de autonomía y el control externo.
-                   Imperio Austrohúngaro: Durante el siglo XIX, los croatas lucharon por mantener su identidad frente a las políticas centralizadoras del imperio.
-                   Segunda Guerra Mundial: Croacia se convirtió en un estado independiente bajo el régimen Ustasha, lo que resultó en persecuciones étnicas y religiosas.
-                   Guerra de Independencia (1991-1995): El conflicto surgió tras la declaración de independencia de Croacia, enfrentando a croatas contra fuerzas serbias y el ejército yugoslavo..</p>
-                   <img src="IMG/e.webp" class="d-block w-80" alt="Contexto Histórico" style="max-width: 40%; height: auto;">
-                </div>
-        </div>
-        <div class="carousel-item">
-            <div class="d-flex flex-column justify-content-center align-items-center" style="min-height: 300px; background-color: #1e3c72; color: white;">
-                <h2>Factores Desencadenantes</h2>
-                <p> Políticos: La centralización del poder en Yugoslavia fue vista como opresiva por los croatas, que buscaban mayor autonomía.
-                    Económicos: La crisis económica de los años 80 en Yugoslavia exacerbó las desigualdades entre las regiones, con Croacia contribuyendo más al presupuesto federal que otras áreas.
-                    Culturales y Étnicos: Las diferencias entre croatas (católicos), serbios (ortodoxos) y bosnios (musulmanes) crearon divisiones que fueron explotadas políticamente.</p>
-                    <img src="IMG/j.webp" class="d-block w-80" alt="Factores Desencadenantes" style="max-width: 40%; height: auto;">
-                </div>
-        </div>
-        <div class="carousel-item">
-            <div class="d-flex flex-column justify-content-center align-items-center" style="min-height: 300px; background-color: #2a5298; color: white;">
-                <h2>Principales Conflictos Sociales</h2>
-                <p>Guerra de Independencia (1991-1995):
-                    Causas: La disolución de Yugoslavia, tensiones étnicas y la búsqueda de soberanía croata.
-                    Impacto: Más de 20,000 muertos, desplazamiento masivo de personas y daños a la infraestructura.
-                    Post-Guerra:
-                    Problemas de reconciliación: Persistencia de tensiones entre croatas y serbios.
-                    Reformas políticas: Cambios necesarios para integrarse en la Unión Europea.
-                    Recientes Movimientos Sociales:
-                    Protestas contra la corrupción política.
-                    Movimientos feministas y por la igualdad de género.
-                    Tensiones entre nacionalistas y grupos pro-europeos.</p>
-                    <img src="IMG/s.webp" class="d-block w-80" alt="Principales Conflictos Sociales" style="max-width: 40%; height: auto;">
+    <!-- Línea de Tiempo -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Cronología de Conflictos</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h5>1102</h5>
+                <p>Unión con Hungría: Pérdida de autonomía.</p>
+            </div>
+            <div class="timeline-item">
+                <h5>1941</h5>
+                <p>Régimen Ustasha: Persecuciones étnicas.</p>
+            </div>
+            <div class="timeline-item">
+                <h5>1991</h5>
+                <p>Inicio de la Guerra de Independencia.</p>
             </div>
         </div>
+    </div>
 
-        <div class="carousel-item">
-            <div class="d-flex flex-column justify-content-center align-items-center" style="min-height: 300px; background-color: #2a5298; color: white;">
-                <h2>Impacto de los Conflictos</h2>
-                <p>Económico: La guerra devastó gran parte de la infraestructura y dañó sectores clave como el turismo y la agricultura. La recuperación ha sido lenta pero constante.
-                    Social: Los desplazamientos masivos dejaron profundas heridas en la cohesión social. A esto se suman problemas relacionados con la integración de refugiados y minorías.
-                    Político: La transición hacia la democracia implicó enfrentar la corrupción, reformar instituciones y garantizar derechos a todas las comunidades.</p>
-                    <img src="IMG/s..webp" class="d-block w-80" alt="Impacto de los Conflictos" style="max-width: 40%; height: auto;">
-                </div>
-        </div>
-
-        <div class="carousel-item">
-            <div class="d-flex flex-column justify-content-center align-items-center" style="min-height: 300px; background-color: #2a5298; color: white;">
-                <h2>Soluciones y Procesos de Reconciliación</h2>
-                <p> Mediación Internacional: La ONU y la OTAN jugaron roles clave durante y después del conflicto para garantizar acuerdos de paz y supervisar su cumplimiento.
-                    Iniciativas Nacionales:
-                    Programas para reconstruir la infraestructura y restablecer servicios básicos.
-                    Leyes para proteger los derechos de las minorías étnicas.
-                    Movimientos Sociales:
-                    La sociedad civil ha liderado iniciativas para promover la convivencia entre croatas y serbios.
-                    Reformas educativas para eliminar prejuicios históricos.</p>
-                    <img src="IMG/i.webp" class="d-block w-80" alt="Soluciones y Procesos de Reconciliación" style="max-width: 40%; height: auto;">
+    <!-- Sección de Estadísticas -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Impacto en Números</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h3 class="counter" data-target="20000">0</h3>
+                <p>Vidas perdidas</p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="counter" data-target="400000">0</h3>
+                <p>Desplazados</p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="counter" data-target="1000000000">0</h3>
+                <p>Daños (€)</p>
             </div>
         </div>
-
-        <div class="carousel-item">
-            <div class="d-flex flex-column justify-content-center align-items-center" style="min-height: 300px; background-color: #2a5298; color: white;">
-                <h2>Conclusión</h2>
-                    Croacia ha atravesado un camino complejo desde su independencia. Los conflictos sociales han dejado cicatrices profundas, pero también han impulsado reformas significativas que buscan una sociedad más equitativa y estable.</p>
-                    <img src="IMG/c.webp" class="d-block w-80" alt="Conclusion" style="max-width: 40%; height: auto;">
-                </div>
-        </div>
-
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-    </button>
-</div>
 
-    <!-- Pie de página -->
+    <!-- Galería -->
+    <div class="container my-5 gallery">
+        <h2 class="text-center mb-4">Galería de Imágenes</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="IMG/img1.jpg" class="img-fluid mb-3" alt="Imagen 1">
+            </div>
+            <div class="col-md-4">
+                <img src="IMG/img2.jpg" class="img-fluid mb-3" alt="Imagen 2">
+            </div>
+            <div class="col-md-4">
+                <img src="IMG/img3.jpg" class="img-fluid mb-3" alt="Imagen 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonios -->
+    <div class="container my-5 testimonials">
+        <h2 class="text-center mb-4">Testimonios</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="testimonial">
+                    <p>"Viví la guerra desde pequeño; la pérdida de amigos fue lo más duro."</p>
+                    <h5>- Ivan Horvat</h5>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="testimonial">
+                    <p>"La reconstrucción fue larga, pero Croacia tiene un nuevo futuro."</p>
+                    <h5>- Marija Novak</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de Página -->
     <footer class="footer">
-        <p>Síguenos en nuestras redes sociales</p>
-        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
-        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
-        <p>Derechos Reservados &copy; 2024 Museo de Croacia</p>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+        <p>&copy; 2024 Museo de Croacia. Todos los derechos reservados.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Script para animar los contadores
+        document.querySelectorAll('.counter').forEach(counter => {
+            const target = +counter.getAttribute('data-target');
+            let count = 0;
+            const updateCount = () => {
+                const increment = target / 100;
+                if (count < target) {
+                    count += increment;
+                    counter.innerText = Math.ceil(count);
+                    setTimeout(updateCount, 50);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            updateCount();
+        });
+    </script>
 </body>
 
 </html>
-
