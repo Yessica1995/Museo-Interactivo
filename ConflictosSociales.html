@@ -1,229 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Museo de Croacia - Conflictos Sociales</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Conflictos Sociales en Croacia</title>
     <style>
-        /* Barra de navegación */
-        .navbar {
-            background: linear-gradient(90deg, #1e3c72, #2a5298);
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .navbar .nav-link {
-            color: white !important;
-            transition: color 0.3s ease;
-        }
-
-        .navbar .nav-link:hover {
-            color: #f4d03f !important;
-        }
-
-        .navbar-brand img {
-            height: 30px;
-            margin-right: 10px;
-        }
-
+        /* Estilos principales */
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
         }
 
-        /* Hero Section */
-        .hero {
-            background: url('IMG/croacia-bg.jpg') no-repeat center center/cover;
-            color: black;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            padding: 100px 20px;
+        /* Cabecera */
+        .header {
+            background-color: #0056b3;
+            color: white;
             text-align: center;
+            padding: 20px;
         }
 
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: bold;
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
         }
 
-        .hero p {
-            font-size: 1.2rem;
-            margin-top: 20px;
+        .header p {
+            font-size: 1rem;
+            margin: 10px 0 0;
         }
 
-        /* Sección de tarjetas */
-        .card {
-            background: #a58a6f;
-            border: none;
+        /* Sección principal */
+        .main {
+            padding: 20px;
+        }
+
+        .main h2 {
+            color: #0056b3;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .main p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .main img {
+            max-width: 100%;
             border-radius: 10px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        .card img {
-            height: 150px;
-            object-fit: cover;
-        }
-
-        .timeline {
-            display: flex;
-            overflow-x: scroll;
-            padding: 20px 0;
-            gap: 15px;
-        }
-
-        .timeline-item {
-            min-width: 250px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            background: white;
-            text-align: center;
-        }
-
-        .timeline-item img {
-            width: 100%;
-            border-bottom: 3px solid #0056b3;
-        }
-
-        .timeline-item h5 {
-            padding: 10px;
+            margin: 20px 0;
         }
 
         /* Footer */
         .footer {
-            background: #1e3c72;
-            color: #ffffff;
-            padding: 20px;
+            background-color: #0056b3;
+            color: white;
             text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
 
         .footer a {
-            color: #ffffff;
+            color: #f4d03f;
             text-decoration: none;
-            margin: 0 10px;
-            transition: color 0.3s ease;
         }
 
         .footer a:hover {
-            color: #f4d03f;
+            text-decoration: underline;
         }
-
-        /* Sección de información adicional */
-        .info-section {
-            background-color: #2a5298;
-            color: white;
-            padding: 40px 20px;
-            border-radius: 10px;
-            margin-top: 30px;
-        }
-
-        .info-section h2 {
-            font-size: 2rem;
-            font-weight: bold;
-        }
-
-        .info-section p {
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-
-        .info-section .row {
-            margin-top: 30px;
-        }
-
-        .info-section .col {
-            text-align: center;
-        }
-
-        .info-section img {
-            width: 100%;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-
     </style>
 </head>
-
 <body>
-    <!-- Barra de Navegación -->
-    <nav class="navbar navbar-expand-lg" style="background-color: #e0e0e0;">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="IMG/Escudo.png" alt="Bandera" style="height: 30px; margin-right: 10px;">
-                Museo de Croacia
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="explorarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Explorar
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="explorarDropdown">
-                            <li><a class="dropdown-item" href="Historia.html">Historia</a></li>
-                            <li><a class="dropdown-item" href="#">Economía</a></li>
-                            <li><a class="dropdown-item" href="#">Cultura</a></li>
-                            <li><a class="dropdown-item" href="#">Moneda</a></li>
-                            <li><a class="dropdown-item" href="#">Gobierno</a></li>
-                            <li><a class="dropdown-item" href="ConfictosSciales.html">Conflictos Sociales</a></li>
-                            <li><a class="dropdown-item" href="delimitaciongeografica.html">Geografía</a></li>
-                            <li><a class="dropdown-item" href="salario.html">Salario</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <div class="hero">
-        <h1>Conflictos Sociales</h1>
-        <p>Los conflictos sociales en Croacia han marcado profundamente la historia del país, desde las luchas por la independencia hasta las tensiones étnicas. Estos eventos han dejado una huella imborrable en la identidad nacional.</p>
+    <!-- Cabecera -->
+    <div class="header">
+        <h1>Conflictos Sociales en Croacia</h1>
+        <p>Un análisis de los conflictos históricos, sociales y políticos que marcaron la nación.</p>
     </div>
 
-    <!-- Carrusel -->
-    <div id="carouselExampleIndicators" class="carousel slide container my-5" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-        </div>
-        <div class="carousel-inner">
-            <!-- Contenido de las diapositivas del carrusel -->
-            <div class="carousel-item active">
-                <div class="d-flex flex-column justify-content-center align-items-center" style="min-height: 300px; background-color: #a58a6f; color: white;">
-                    <h2>Contexto Histórico</h2>
-                    <p>En 1991, Croacia declaró su independencia de Yugoslavia, lo que desencadenó un conflicto sangriento que duró varios años y dejó profundas cicatrices en la sociedad.</p>
-                    <img src="IMG/e.webp" class="d-block w-80" alt="Contexto Histórico" style="max-width: 40%; height: auto;">
-                </div>
-            </div>
-            <!-- Continúa con otras diapositivas aquí... -->
-        </div>
+    <!-- Sección principal -->
+    <div class="main">
+        <h2>Historia de los Conflictos Sociales</h2>
+        <p>
+            Croacia, una nación con una rica historia, ha enfrentado numerosos conflictos sociales que han moldeado su identidad. Desde la época medieval hasta la Guerra de Independencia en los años 90, los croatas han superado desafíos significativos.
+        </p>
+        <img src="https://via.placeholder.com/800x400" alt="Historia de Croacia">
+        
+        <h2>Guerra de Independencia (1991-1995)</h2>
+        <p>
+            La Guerra de Independencia surgió tras la disolución de Yugoslavia. Tensiones étnicas entre croatas y serbios desembocaron en un conflicto que dejó más de 20,000 muertos y un legado de divisiones sociales.
+        </p>
+        <img src="https://via.placeholder.com/800x400" alt="Guerra de Independencia">
+        
+        <h2>Impacto de los Conflictos</h2>
+        <p>
+            Los conflictos sociales han afectado profundamente la economía, la cohesión social y las relaciones internacionales de Croacia. A pesar de esto, la nación ha trabajado arduamente para promover la reconciliación y el desarrollo.
+        </p>
+        <img src="https://via.placeholder.com/800x400" alt="Impacto de los Conflictos">
+    </div>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-        </button>
- </div>
+    <!-- Pie de página -->
+    <div class="footer">
+        <p>&copy; 2024 - Análisis de Conflictos en Croacia. <a href="#">Contacto</a></p>
+    </div>
 </body>
 </html>
 
