@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
-        /* Estilos Generales */
+        /* Barra de navegación */
         .navbar {
             background: linear-gradient(90deg, #1e3c72, #2a5298);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -23,22 +23,20 @@
             color: #f4d03f !important;
         }
 
-        .navbar-brand img {
-            height: 30px;
-            margin-right: 10px;
-        }
-
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
         }
 
         /* Hero Section */
         .hero {
             background: url('IMG/croacia-bg.jpg') no-repeat center center/cover;
             color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
             padding: 100px 20px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         .hero h1 {
@@ -46,68 +44,55 @@
             font-weight: bold;
         }
 
-        .hero p {
-            font-size: 1.2rem;
+        /* Sección de estadísticas */
+        .stat-section {
+            background-color: #ffffff;
+            padding: 50px 0;
+        }
+
+        .stat {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #2a5298;
         }
 
         /* Línea de Tiempo */
         .timeline {
             display: flex;
+            gap: 15px;
             overflow-x: auto;
             padding: 20px 0;
-            gap: 15px;
         }
 
         .timeline-item {
             min-width: 250px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             background: white;
+            border-radius: 10px;
             padding: 15px;
             text-align: center;
-        }
-
-        /* Estadísticas */
-        .counter {
-            font-size: 3rem;
-            color: #1e3c72;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         /* Galería */
         .gallery img {
+            width: 100%;
             border-radius: 10px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .gallery img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            margin-bottom: 15px;
         }
 
         /* Testimonios */
-        .testimonials .testimonial {
-            background: #a58a6f;
-            color: white;
+        .testimonial {
+            background-color: #e8e8e8;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         /* Footer */
         .footer {
             background: #1e3c72;
-            color: white;
-            text-align: center;
+            color: #ffffff;
             padding: 20px;
-        }
-
-        .footer a {
-            color: white;
-            margin: 0 10px;
-        }
-
-        .footer a:hover {
-            color: #f4d03f;
+            text-align: center;
         }
     </style>
 </head>
@@ -117,88 +102,83 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="IMG/Escudo.png" alt="Bandera">
+                <img src="IMG/Escudo.png" alt="Escudo" style="height: 30px; margin-right: 10px;">
                 Museo de Croacia
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="ConfictosSciales.html">Conflictos Sociales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Conflictos Sociales</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <div class="hero text-center">
+    <div class="hero">
         <h1>Conflictos Sociales en Croacia</h1>
-        <p>Desde la Edad Media hasta la era moderna, los conflictos sociales han moldeado la identidad croata.</p>
-    </div>
-
-    <!-- Línea de Tiempo -->
-    <div class="container my-5">
-        <h2 class="text-center mb-4">Cronología de Conflictos</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <h5>1102</h5>
-                <p>Unión con Hungría: Pérdida de autonomía.</p>
-            </div>
-            <div class="timeline-item">
-                <h5>1941</h5>
-                <p>Régimen Ustasha: Persecuciones étnicas.</p>
-            </div>
-            <div class="timeline-item">
-                <h5>1991</h5>
-                <p>Inicio de la Guerra de Independencia.</p>
-            </div>
-        </div>
+        <p>Explora la historia y el impacto de los conflictos en la sociedad croata.</p>
     </div>
 
     <!-- Sección de Estadísticas -->
+    <section class="stat-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="stat" data-target="20000">0</div>
+                    <p>Vidas perdidas</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat" data-target="400000">0</div>
+                    <p>Desplazados</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat" data-target="1000000000">0</div>
+                    <p>Daños económicos (€)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Línea de Tiempo -->
     <div class="container my-5">
-        <h2 class="text-center mb-4">Impacto en Números</h2>
-        <div class="row text-center">
-            <div class="col-md-4">
-                <h3 class="counter" data-target="20000">0</h3>
-                <p>Vidas perdidas</p>
+        <h2 class="text-center mb-4">Cronología de Conflictos Sociales</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h5>1102: Unión con Hungría</h5>
+                <p>Pérdida de autonomía y tensiones políticas.</p>
             </div>
-            <div class="col-md-4">
-                <h3 class="counter" data-target="400000">0</h3>
-                <p>Desplazados</p>
+            <div class="timeline-item">
+                <h5>1941: Segunda Guerra Mundial</h5>
+                <p>Persecuciones durante el régimen Ustasha.</p>
             </div>
-            <div class="col-md-4">
-                <h3 class="counter" data-target="1000000000">0</h3>
-                <p>Daños (€)</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Galería -->
-    <div class="container my-5 gallery">
-        <h2 class="text-center mb-4">Galería de Imágenes</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <img src="IMG/img1.jpg" class="img-fluid mb-3" alt="Imagen 1">
-            </div>
-            <div class="col-md-4">
-                <img src="IMG/img2.jpg" class="img-fluid mb-3" alt="Imagen 2">
-            </div>
-            <div class="col-md-4">
-                <img src="IMG/img3.jpg" class="img-fluid mb-3" alt="Imagen 3">
+            <div class="timeline-item">
+                <h5>1991: Guerra de Independencia</h5>
+                <p>Conflicto con Serbia tras la disolución de Yugoslavia.</p>
             </div>
         </div>
     </div>
 
-    <!-- Testimonios -->
-    <div class="container my-5 testimonials">
+    <!-- Galería de Imágenes -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Galería Histórica</h2>
+        <div class="row gallery">
+            <div class="col-md-4"><img src="IMG/imagen1.jpg" alt="Historia 1"></div>
+            <div class="col-md-4"><img src="IMG/imagen2.jpg" alt="Historia 2"></div>
+            <div class="col-md-4"><img src="IMG/imagen3.jpg" alt="Historia 3"></div>
+        </div>
+    </div>
+
+    <!-- Sección de Testimonios -->
+    <div class="container my-5">
         <h2 class="text-center mb-4">Testimonios</h2>
         <div class="row">
             <div class="col-md-6">
                 <div class="testimonial">
-                    <p>"Viví la guerra desde pequeño; la pérdida de amigos fue lo más duro."</p>
+                    <p>"Viví la guerra desde pequeño; la pérdida de amigos fue lo más duro..."</p>
                     <h5>- Ivan Horvat</h5>
                 </div>
             </div>
@@ -211,34 +191,37 @@
         </div>
     </div>
 
-    <!-- Pie de Página -->
+    <!-- Pie de página -->
     <footer class="footer">
-        <p>Síguenos en nuestras redes sociales:</p>
-        <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
-        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
-        <p>&copy; 2024 Museo de Croacia. Todos los derechos reservados.</p>
+        <p>Síguenos en nuestras redes sociales</p>
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+        <p>Derechos Reservados &copy; 2024 Museo de Croacia</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script para estadísticas animadas -->
     <script>
-        // Script para animar los contadores
-        document.querySelectorAll('.counter').forEach(counter => {
-            const target = +counter.getAttribute('data-target');
+        const stats = document.querySelectorAll('.stat');
+        stats.forEach(stat => {
+            const target = +stat.getAttribute('data-target');
             let count = 0;
             const updateCount = () => {
                 const increment = target / 100;
                 if (count < target) {
                     count += increment;
-                    counter.innerText = Math.ceil(count);
+                    stat.innerText = Math.ceil(count);
                     setTimeout(updateCount, 50);
                 } else {
-                    counter.innerText = target;
+                    stat.innerText = target;
                 }
             };
             updateCount();
         });
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
+
