@@ -1,149 +1,229 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conflictos Sociales en Croacia</title>
+    <title>Museo de Croacia - Conflictos Sociales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
+        /* Barra de navegación */
+        .navbar {
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .nav-link:hover {
+            color: #f4d03f !important;
+        }
+
+        .navbar-brand img {
+            height: 30px;
+            margin-right: 10px;
+        }
+
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            color: #333;
         }
-        header {
-            background-color: #5a2d82;
-            color: white;
+
+        /* Hero Section */
+        .hero {
+            background: url('IMG/croacia-bg.jpg') no-repeat center center/cover;
+            color: black;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            padding: 100px 20px;
             text-align: center;
-            padding: 20px 0;
         }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #4b256c;
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
+
+        .hero h1 {
+            font-size: 3rem;
             font-weight: bold;
         }
-        nav a:hover {
-            text-decoration: underline;
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 20px;
         }
-        .section {
-            background-color: white;
-            margin: 20px;
-            padding: 20px;
+
+        /* Sección de tarjetas */
+        .card {
+            background: #a58a6f;
+            border: none;
             border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
-        h2 {
-            color: #5a2d82;
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
         }
+
+        .card img {
+            height: 150px;
+            object-fit: cover;
+        }
+
         .timeline {
             display: flex;
-            flex-direction: column;
+            overflow-x: scroll;
+            padding: 20px 0;
             gap: 15px;
-            margin-top: 20px;
         }
-        .event {
-            background-color: #e6e6e6;
-            padding: 15px;
-            border-left: 5px solid #5a2d82;
-            border-radius: 5px;
+
+        .timeline-item {
+            min-width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background: white;
+            text-align: center;
         }
-        .gallery img {
+
+        .timeline-item img {
+            width: 100%;
+            border-bottom: 3px solid #0056b3;
+        }
+
+        .timeline-item h5 {
+            padding: 10px;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1e3c72;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #f4d03f;
+        }
+
+        /* Sección de información adicional */
+        .info-section {
+            background-color: #2a5298;
+            color: white;
+            padding: 40px 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .info-section h2 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .info-section p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .info-section .row {
+            margin-top: 30px;
+        }
+
+        .info-section .col {
+            text-align: center;
+        }
+
+        .info-section img {
             width: 100%;
             border-radius: 10px;
-        }
-        .gallery {
-            display: flex;
-            gap: 10px;
-            overflow-x: auto;
             margin-top: 20px;
         }
-        .quote {
-            font-style: italic;
-            background-color: #e6e6e6;
-            padding: 15px;
-            border-left: 5px solid #5a2d82;
-            margin-top: 20px;
-            border-radius: 5px;
-        }
-        footer {
-            text-align: center;
-            background-color: #5a2d82;
-            color: white;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
+
     </style>
 </head>
-<body>
-    <header>
-        <h1>Conflictos Sociales en Croacia</h1>
-    </header>
 
-    <nav>
-        <a href="#introduccion">Introducción</a>
-        <a href="#historia">Historia</a>
-        <a href="#factores">Factores</a>
-        <a href="#galeria">Galería</a>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #e0e0e0;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="IMG/Escudo.png" alt="Bandera" style="height: 30px; margin-right: 10px;">
+                Museo de Croacia
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="explorarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Explorar
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="explorarDropdown">
+                            <li><a class="dropdown-item" href="Historia.html">Historia</a></li>
+                            <li><a class="dropdown-item" href="#">Economía</a></li>
+                            <li><a class="dropdown-item" href="#">Cultura</a></li>
+                            <li><a class="dropdown-item" href="#">Moneda</a></li>
+                            <li><a class="dropdown-item" href="#">Gobierno</a></li>
+                            <li><a class="dropdown-item" href="ConfictosSciales.html">Conflictos Sociales</a></li>
+                            <li><a class="dropdown-item" href="delimitaciongeografica.html">Geografía</a></li>
+                            <li><a class="dropdown-item" href="salario.html">Salario</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <div class="section" id="introduccion">
-        <h2>Introducción</h2>
-        <p>Los conflictos sociales en Croacia han sido el resultado de complejas tensiones históricas, políticas y étnicas. Desde la era medieval hasta la reciente independencia del país, Croacia ha enfrentado desafíos que han dejado cicatrices profundas en su sociedad.</p>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Conflictos Sociales</h1>
+        <p>Los conflictos sociales en Croacia han marcado profundamente la historia del país, desde las luchas por la independencia hasta las tensiones étnicas. Estos eventos han dejado una huella imborrable en la identidad nacional.</p>
     </div>
 
-    <div class="section" id="historia">
-        <h2>Historia de los Conflictos</h2>
-        <div class="timeline">
-            <div class="event">
-                <strong>1991:</strong> Croacia declara su independencia, lo que desata la Guerra de Independencia.
+    <!-- Carrusel -->
+    <div id="carouselExampleIndicators" class="carousel slide container my-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+            <!-- Contenido de las diapositivas del carrusel -->
+            <div class="carousel-item active">
+                <div class="d-flex flex-column justify-content-center align-items-center" style="min-height: 300px; background-color: #a58a6f; color: white;">
+                    <h2>Contexto Histórico</h2>
+                    <p>En 1991, Croacia declaró su independencia de Yugoslavia, lo que desencadenó un conflicto sangriento que duró varios años y dejó profundas cicatrices en la sociedad.</p>
+                    <img src="IMG/e.webp" class="d-block w-80" alt="Contexto Histórico" style="max-width: 40%; height: auto;">
+                </div>
             </div>
-            <div class="event">
-                <strong>1992:</strong> Reconocimiento internacional de Croacia como un estado independiente.
-            </div>
-            <div class="event">
-                <strong>1995:</strong> Fin de la guerra con la Operación Tormenta, recuperación de territorios ocupados.
-            </div>
+            <!-- Continúa con otras diapositivas aquí... -->
         </div>
-    </div>
 
-    <div class="section" id="factores">
-        <h2>Factores Desencadenantes</h2>
-        <ul>
-            <li><strong>Políticos:</strong> Centralización del poder en Yugoslavia, percibida como opresiva.</li>
-            <li><strong>Económicos:</strong> Crisis económica en los años 80, desigualdades regionales.</li>
-            <li><strong>Culturales y Étnicos:</strong> Tensiones entre croatas (católicos), serbios (ortodoxos) y bosnios (musulmanes).</li>
-        </ul>
-    </div>
-
-    <div class="section" id="galeria">
-        <h2>Galería Histórica</h2>
-        <div class="gallery">
-            <img src="https://via.placeholder.com/300" alt="Imagen histórica 1">
-            <img src="https://via.placeholder.com/300" alt="Imagen histórica 2">
-            <img src="https://via.placeholder.com/300" alt="Imagen histórica 3">
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>Citas Relevantes</h2>
-        <div class="quote">
-            "El camino hacia la independencia fue doloroso, pero necesario para nuestra identidad nacional." — Figura histórica croata.
-        </div>
-        <div class="quote">
-            "La paz no es solo la ausencia de guerra, sino la reconstrucción de una sociedad." — Observador internacional.
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Museo Interactivo de Croacia | Conflictos Sociales</p>
-    </footer>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+ </div>
 </body>
 </html>
+
